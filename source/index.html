@@ -22,10 +22,10 @@
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--icon-search">
-              <input class="user-list__search" type="search" placeholder="Поиск по сайту">
+              <a class="user-list__search" href="#">Поиск по сайту</a>
             </li>
-            <li class="user-list__item user-list__item--icon-basket">
-              <a class="user-list__basket" href="#">Корзина: пока пуста</a>
+            <li class="user-list__item user-list__item--icon-cart">
+              <a class="user-list__cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -75,7 +75,7 @@
               </tr>
             </table>
             <div class="card-product__image">
-              <img class="card-product__image--basket" src="http://placehold.it/150x100" width="260" height="315" alt="Картинка с корзинками">
+              <img class="card-product__image--cart" src="http://placehold.it/150x100" width="260" height="315" alt="Картинка с корзинками">
             </div>
             <span class="card-product__cost">Цена: 990 руб.</span>
             <button class="card-product__btn btn-card-product">Заказать</button>
@@ -140,7 +140,7 @@
           <table class="contacts__info">
             <tr class="contacts__row">
               <td class="contacts__cell">e-mail:</td>
-              <td class="contacts__cell cell-item--green">info@mimimishkashop.ru</td>
+              <td class="contacts__cell contacts__cell--green-line">info@mimimishkashop.ru</td>
             </tr>
             <tr class="contacts__row">
               <td class="contacts__cell">адрес:</td>
@@ -159,51 +159,54 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="ccылка на инстаграм"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="ссылка на фейсбук"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy"></a>
+              <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="ссылка на твиттер"></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__btn btn-academy" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип Академии">
+          </a>
         </div>
       </div>
     </footer>
 
     <!-- Modal window -->
 
-    <section class="modal-window modal-basket">
-      <div class="modal-basket__wrapper">
-        <h2 class="modal-basket__title">Добавить в корзину</h2>
-        <span class="modal-basket__subtitle">Выберите размер:</span>
-        <ul class="modal-basket__list">
-          <li class="modal-basket__item">
-            <label class="modal-basket__checkbox">
+    <section class="modal-window modal-cart">
+      <div class="modal-cart__wrapper">
+        <h2 class="modal-cart__title">Добавить в корзину</h2>
+        <span class="modal-cart__subtitle">Выберите размер:</span>
+        <ul class="modal-cart__list">
+          <li class="modal-cart__item">
+            <label class="modal-cart__checkbox">
               <input class="vissually-hidden" type="checkbox" checked>
-              <span class="modal-basket__size">S</span>
+              <span class="modal-cart__size">S</span>
             </label>
           </li>
-          <li class="modal-basket__item">
-            <label class="modal-basket__checkbox">
+          <li class="modal-cart__item">
+            <label class="modal-cart__checkbox">
               <input class="vissually-hidden" type="checkbox">
-              <span class="modal-basket__size">M</span>
+              <span class="modal-cart__size">M</span>
             </label>
           </li>
-          <li class="modal-basket__item">
-            <label class="modal-basket__checkbox">
+          <li class="modal-cart__item">
+            <label class="modal-cart__checkbox">
               <input class="vissually-hidden" type="checkbox">
-              <span class="modal-basket__size">L</span>
+              <span class="modal-cart__size">L</span>
             </label>
           </li>
         </ul>
       </div>
-      <a class="modal-basket__btn btn-basket" href="#">Добавить</a>
+      <a class="modal-cart__btn btn-cart" href="#">Добавить</a>
     </section>
 
   </body>
