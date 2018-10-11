@@ -1,0 +1,24 @@
+.copyright {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .copyright__text {
+    font-size: 19px;
+    line-height: 18px;
+    margin-right: 30px;
+  }
+
+  .copyright__image {
+    &:hover path {
+      fill: @green-hover;
+    }
+
+    &:active path,
+    &:focus path {
+      fill: @green-down;
+    }
+  }
+}

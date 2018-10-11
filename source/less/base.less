@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+
+  background-color: white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+h2,
+h3,
+p,
+blockquote,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+.button {
+  display: block;
+  width: 260px;
+  text-align: center;
+  padding: 18px 0;
+  border: 2px solid @button-border;
+  color: @button-border;
+  font-size: 17px;
+  line-height: 20px;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+.featured__line-zigzag {
+  margin-top: 37px;
+  margin-bottom: 33px;
+}

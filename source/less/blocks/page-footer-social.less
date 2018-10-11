@@ -1,0 +1,27 @@
+.social {
+  border-bottom: 1px solid @footer-border-color;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__link {
+  margin: 20px;
+}
+
+.social__link--instagram,
+.social__link--facebook,
+.social__link--twitter {
+  &:hover path {
+    fill: @green-hover;
+  }
+
+  &:active path,
+  &:focus path {
+    fill: @green-down;
+  }
+}
