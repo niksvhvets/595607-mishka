@@ -1,57 +1,12 @@
-.page-header {
-  &__logo-image {
-    margin: 22px 117px;
+.page-header__logo-image {
+  margin: 22px 117px;
 
-    &:hover path {
-      fill: @green-hover;
-    }
-
-    &:active path,
-    &:focus path {
-      fill: @green-down;
-    }
+  &:hover path {
+    fill: @green-hover;
   }
 
-  .main-nav {
-    &__toggle {
-      position: absolute;
-      top: 32px;
-      left: 265px;
-      background: url("../../img/icon-menu-open.svg");
-      width: 24px;
-      height: 14px;
-      border: 0;
-      cursor: pointer;
-    }
-
-    .site-list__item,
-    .user-list__item {
-      width: 320px;
-      height: 79px;
-      border-top: 1px solid #ececec;
-
-      .site-list__link,
-      .user-list__search,
-      .user-list__cart {
-        font-size: 17px;
-        line-height: 24px;
-        display: block;
-        text-align: left;
-        margin-left: 75px;
-        margin-top: 30px;
-      }
-    }
-
-    .user-list__item--icon-search {
-      background: url("../../img/icon-search.svg") no-repeat 32px 31px;
-      width: 320px;
-      height: 79px;
-    }
-
-    .user-list__item--icon-cart {
-      background: url("../../img/icon-cart.svg") no-repeat 32px 31px;
-      width: 320px;
-      height: 79px;
-    }
+  &:active path,
+  &:focus path {
+    fill: @green-down;
   }
 }
