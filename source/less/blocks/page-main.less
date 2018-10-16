@@ -29,7 +29,7 @@
 
   .page-main__title::after {
     display: block;
-    position: relative;
+    position: absolute;
     margin-top: 57px;
     z-index: 99;
     content: "";
@@ -51,6 +51,17 @@
     font-size: 27px;
     line-height: 30px;
     font-weight: bold;
+  }
+
+  .page-main__title::after {
+    display: block;
+    position: absolute;
+    margin-top: 57px;
+    z-index: 99;
+    content: "";
+    width: 1250px;
+    height: 24px;
+    background: url(../../img/bg-zigzag-fill.svg);
   }
 
   .page-main__title--gray-font {

@@ -124,5 +124,48 @@
 
 
 @media (min-width:@desktop-width) {
+  .video {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
+  .video__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .video__container {
+    order: 1;
+  }
+
+  .video__header {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 78px;
+    width: 220px;
+  }
+
+  .video__title {
+    margin: 0;
+    margin-top: 30px;
+
+  }
+
+  .video__text-info {
+    order: 3;
+    width: 265px;
+    position: absolute;
+    top: 140px;
+    left: 739px;
+  }
+
+  .video__button {
+    order: 4;
+    position: absolute;
+    top: 320px;
+    left: 773px;
+  }
 }

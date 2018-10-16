@@ -122,5 +122,74 @@
 
 
 @media (min-width:@desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 
+  .product__title {
+    font-size: 20px;
+  }
+
+  .product__title--catalog {
+    margin-top: 32px;
+  }
+
+  .product__picture {
+    display: block;
+    width: 316px;
+    height: 462px;
+  }
+
+  .product__picture--hare {
+    background: url("../../img/photo-hare-desktop@1x.jpg");
+  }
+
+  .product__picture--bowl {
+    background: url("../../img/photo-bowl-desktop@1x.jpg");
+  }
+
+  .product__picture--toys {
+    background: url("../../img/photo-toys-desktop@1x.jpg");
+  }
+
+  .product__info {
+    width: 316px;
+  }
+
+  .product__parameter {
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+
+  .product__parameter--margin {
+    margin-bottom: 21px;
+  }
+
+  .product__order {
+    width: 205px;
+    border-top: 1px solid #ededed;
+    margin-top: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 28px;
+  }
+
+  .product__cost {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .product__link {
+    display: block;
+  }
+
+  .product__picture-content {
+    display: block;
+  }
 }
