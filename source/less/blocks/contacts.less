@@ -35,13 +35,14 @@
   margin-bottom: 39px;
 }
 
-@media (min-width:@tablet-width) {
+@media (min-width: @tablet-width) {
   .contacts {
     padding: 0;
     padding-top: 69px;
   }
 
   .contacts__title {
+    position: relative;
     padding-left: 50px;
     font-size: 43px;
     line-height: 50px;
@@ -72,10 +73,6 @@
     padding-right: 20px;
   }
 
-  .contacts__title {
-    position: relative;
-  }
-
   .contacts__title::after {
     content: "";
     background: url("../../img/icon-flag.svg");
@@ -86,7 +83,7 @@
   }
 }
 
-@media (min-width:@desktop-width) {
+@media (min-width: @desktop-width) {
   .contacts {
     width: 1250px;
   }
