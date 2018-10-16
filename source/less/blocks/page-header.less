@@ -1,3 +1,9 @@
+.page-header {
+  .width-mobile;
+  margin: 0 auto;
+  width: auto;
+}
+
 .page-header__logo-image {
   margin: 22px 117px;
 
@@ -27,5 +33,19 @@
 }
 
 @media (min-width:@desktop-width) {
+  .page-header {
+    .width-desktop;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+  }
 
+  .page-header__logo {
+    position: absolute;
+    left: 560px;
+  }
+
+  .page-header__logo-image {
+    margin: 22px;
+  }
 }

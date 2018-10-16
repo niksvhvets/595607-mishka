@@ -1,5 +1,6 @@
 .page-main {
   .width-mobile;
+  margin: 0 auto;
 }
 
 .page-main__title {
@@ -16,28 +17,9 @@
   border-top: 1px solid #ececec;
 }
 
-.page-main__text {
-  font-size: 13px;
-  line-height: 24px;
-  color: @text-color;
-  font-weight: 400;
-  padding-top: 28px;
-}
-
-.page-main__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-
 @media (min-width:@tablet-width) {
   .page-main {
     .width-table;
-  }
-
-  .page-main__wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   .page-main__title {
@@ -47,22 +29,36 @@
 
   .page-main__title::after {
     display: block;
-    position: absolute;
+    position: relative;
     margin-top: 57px;
     z-index: 99;
     content: "";
-    width: 100%;
+    width: 768px;
     height: 24px;
     background: url(../../img/bg-zigzag-fill.svg);
   }
 
-  .page-main__text {
-    font-size: 17px;
-    line-height: 30px;
-  }
 }
 
 
 @media (min-width:@desktop-width) {
+  .page-main {
+    .width-desktop;
+    margin: 0 auto;
+  }
+
+  .page-main__title {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .page-main__title--gray-font {
+    background: @footer-font-color;
+    text-align: center;
+    padding-top: 77px;
+    padding-bottom: 80px;
+    border-top: 1px solid #ececec;
+  }
 
 }

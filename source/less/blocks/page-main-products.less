@@ -20,7 +20,6 @@
   background-repeat: no-repeat;
   background-position-x: 244px;
   background-position-y: 20px;
-
   color: white;
 }
 
@@ -47,7 +46,6 @@
   background-repeat: no-repeat;
   background-position-x: 233px;
   background-position-y: 20px;
-
   color: white;
 }
 
@@ -106,9 +104,32 @@
     width: 100%;
     height: 24px;
     background: url("../../img/bg-zigzag-fill.svg");
+    left: 18px;
   }
 }
 
 @media (min-width:@desktop-width) {
+  .products__wrapper {
+    width: 1250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: -120px;
+  }
 
+  .products__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .products__item {
+    width: 525px;
+  }
+
+  .products__name--icon-lamp {
+    background-position-x: 455px;
+  }
+
+  .products__name--icon-cube {
+    background-position-x: 440px;
+  }
 }

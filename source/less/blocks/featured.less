@@ -30,6 +30,7 @@
     position: relative;
     padding-left: 50px;
     padding-right: 50px;
+    width: 768px;
   }
 
   .featured::after {
@@ -39,7 +40,7 @@
     background-size: cover;
     margin-left: -50px;
     height: 17px;
-    width: 772px;
+    width: 768px;
     margin-top: 52px;
   }
 
@@ -72,10 +73,47 @@
     display: inline-block;
     width: 50%;
   }
-
-
 }
 
 @media (min-width:@desktop-width) {
+  .featured {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 1250px;
+  }
 
+  .featured::after {
+    margin-left: -100px;
+    height: 25px;
+    width: 1250px;
+  }
+
+  .featured__wrapper {
+    background: url("../../img/triple-set-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 80px;
+  }
+
+  .featured__title {
+    font-size: 50px;
+    line-height: 57px;
+    float: right;
+    margin-right: 350px;
+    padding-top: 130px;
+  }
+
+  .featured__subtitle {
+    padding-top: 144px;
+    margin-left: 40px;
+  }
+
+  .featured__item-text {
+    padding-left: 175px;
+  }
+
+  .featured__product-card-wrapper {
+    padding-left: 175px;
+  }
 }

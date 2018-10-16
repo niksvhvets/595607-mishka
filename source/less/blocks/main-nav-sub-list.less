@@ -1,0 +1,58 @@
+.sub-list {
+  display: none;
+}
+
+@media (min-width:@tablet-width) {
+  .sub-list {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    position: absolute;
+    top: 113px;
+    left: 235px;
+  }
+
+  .sub-list__item--arrivals {
+    display: none;
+  }
+
+  .sub-list__item--discount {
+    display: none;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .sub-list {
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    position: absolute;
+    top: 113px;
+    left: 0;
+  }
+
+  .sub-list__item--arrivals {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  .sub-list__item--discount {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 60px;
+  }
+
+  .sub-list__item--delivery {
+    display: block;
+  }
+}

@@ -1,15 +1,12 @@
 .page-footer {
   .width-mobile;
+  margin: 0 auto;
   background: @footer-font-color;
 }
 
 .page-footer__wrapper {
   padding-left: 30px;
   padding-right: 30px;
-}
-
-.page-footer__logo {
-
 }
 
 .page-footer__social {
@@ -50,5 +47,28 @@
 }
 
 @media (min-width:@desktop-width) {
+  .page-footer {
+    .width-desktop;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .page-footer__logo-image {
+    display: block;
+    background: url("../../img/logo-footer.svg");
+    width: 102px;
+    height: 34px;
+  }
+
+  .page-footer__social {
+    margin-left: 70px;
+  }
 }

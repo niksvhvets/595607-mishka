@@ -1,4 +1,4 @@
-.about-us {
+.about-us__wrapper {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -20,9 +20,6 @@
 
 .about-us__text {
   padding-top: 20px;
-}
-
-.about-us__text {
   font-size: 17px;
   line-height: 20px;
 }
@@ -109,7 +106,7 @@
     background: url("../../img/bg-zigzag-line.svg");
     background-size: cover;
     height: 17px;
-    width: 772px;
+    width: 768px;
     margin-top: 52px;
   }
 
@@ -133,8 +130,36 @@
   }
 
   .about-us__advantage {
-    width: 261px;
-    margin-right: 60px;
+    width: 306px;
+  }
+
+  .about-us__advantage--flower {
+    order: 1;
+  }
+
+  .about-us__advantage--money {
+    order: 3;
+  }
+
+  .about-us__advantage--heart {
+    order: 5;
+  }
+
+  .about-us__advantage--ball {
+    order: 2;
+  }
+
+  .about-us__advantage--rocket {
+    order: 4;
+  }
+
+  .about-us__advantage--gift {
+    order: 6;
+  }
+
+  .about-us__text {
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .about-us__reviews-wrapper {
@@ -185,5 +210,52 @@
     background-position-y: 13px;
     width: 70px;
     height: 52px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .about-us {
+    padding: 0;
+    background: url("../../img/review@1x.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+    background-position-y: 550px;
+  }
+
+  .about-us::after {
+    height: 25px;
+    width: 1250px;
+  }
+
+  .about-us__wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+
+  .about-us__advantage {
+    width: 306px;
+  }
+
+  .about-us__reviews-wrapper {
+    padding-left: 175px;
+  }
+
+  .about-us__reviews-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__button {
+    left: 875px;
   }
 }
