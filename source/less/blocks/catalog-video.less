@@ -26,6 +26,27 @@
   position: relative;
 }
 
+.video__preview {
+  width: 256px;
+  height: 150px;
+}
+
+.video__preview--frame {
+  background: url("../../img/video-mobile@1x.jpg");
+}
+
+.video__link {
+  width: 101px;
+  height: 77px;
+}
+
+.video__image--play {
+  background: url("../../img/icon-play.svg");
+  position: absolute;
+  top: 37px;
+  left: 80px;
+}
+
 .video__title--style {
   margin-left: 25px;
 }
@@ -48,4 +69,60 @@
   width: 192px;
   margin: 0 auto;
   margin-bottom: 32px;
+}
+
+@media (min-width:@tablet-width) {
+  .video {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .video__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video__header {
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .video__container {
+    order: 1;
+  }
+
+  .video__button {
+    order: 4;
+  }
+
+  .video__text-info {
+    order: 3;
+  }
+
+  .video__preview {
+    width: 664px;
+    height: 445px;
+  }
+
+  .video__preview--frame {
+    background: url("../../img/video-tablet@1x.jpg");
+  }
+
+  .video__link {
+    width: 101px;
+    height: 77px;
+  }
+
+  .video__image--play {
+    background: url("../../img/icon-play.svg");
+    position: absolute;
+    top: 169px;
+    left: 283px;
+  }
+
+}
+
+
+@media (min-width:@desktop-width) {
+
 }

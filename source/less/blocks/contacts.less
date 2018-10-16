@@ -9,6 +9,15 @@
   margin-bottom: 42px;
 }
 
+.contacts__title::after {
+  content: "";
+  background: url("../../img/icon-flag.svg");
+  width: 47px;
+  height: 81px;
+  position: absolute;
+  left: 668px;
+}
+
 .contacts__info {
   display: table;
   margin-bottom: 44px;
@@ -33,4 +42,46 @@
 
 .contacts__button {
   margin-bottom: 39px;
+}
+
+@media (min-width:@tablet-width) {
+  .contacts {
+    padding: 0;
+    padding-top: 69px;
+  }
+
+  .contacts__title {
+    padding-left: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__info {
+
+    padding-left: 50px;
+  }
+
+  .contacts__map {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .contacts__button {
+    margin: 0 auto;
+    margin-bottom: 57px;
+  }
+
+  .contacts__row {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+  }
+
+  .contacts__cell:first-child {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+
 }

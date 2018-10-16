@@ -23,6 +23,24 @@
   margin-top: 32px;
 }
 
+.product__picture {
+  display: block;
+  width: 260px;
+  height: 195px;
+}
+
+.product__picture--hare {
+  background: url("../../img/photo-hare-mobile@1x.jpg");
+}
+
+.product__picture--bowl {
+  background: url("../../img/photo-bowl-mobile@1x.jpg");
+}
+
+.product__picture--toys {
+  background: url("../../img/photo-toys-mobile@1x.jpg");
+}
+
 .product__parameter {
   font-size: 13px;
   line-height: 30px;
@@ -54,4 +72,55 @@
 
 .product__picture-content {
   display: block;
+}
+
+
+@media (min-width:@tablet-width) {
+  .product__picture {
+    display: block;
+    width: 334px;
+    height: 334px;
+  }
+
+  .product__picture--hare {
+    background: url("../../img/photo-hare-tablet@1x.jpg");
+  }
+
+  .product__picture--bowl {
+    background: url("../../img/photo-bowl-tablet@1x.jpg");
+  }
+
+  .product__picture--toys {
+    background: url("../../img/photo-toys-tablet@1x.jpg");
+  }
+
+  .product__info {
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .product__title {
+    font-size: 20px;
+  }
+
+  .product__parameter {
+    font-size: 15px;
+    margin-bottom: 150px;
+  }
+
+  .product__order {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .product__cost {
+    font-size: 17px;
+  }
+}
+
+
+@media (min-width:@desktop-width) {
+
 }

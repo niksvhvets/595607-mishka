@@ -39,3 +39,25 @@
   width: 320px;
   height: 79px;
 }
+
+@media (min-width:@tablet-width) {
+  .user-list {
+    order: 1;
+    padding-left: 125px;
+  }
+
+  .user-list__item {
+    border: 0;
+  }
+
+  .user-list__search {
+    display: none;
+  }
+
+  .user-list__item--icon-search {
+    width: 82px;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+
+}

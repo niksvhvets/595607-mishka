@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -31,6 +33,9 @@
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
+            <li class="site-list__item site-list__item--delivery">
+              <a class="site-list__delivery" href="#">Бесплатная доставка по России</a>
+            </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item user-list__item--icon-search">
@@ -51,8 +56,8 @@
         <div class="catalog__wrapper">
           <ul class="catalog__list">
             <li class="catalog__item product">
-              <a class="product__picture" href="#">
-                <img class="product__picture-content" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="игрушка зайчик">
+              <a class="product__picture product__picture--hare" href="#">
+                <!--<img class="product__picture-content"  width="260" height="195" alt="игрушка зайчик">-->
               </a>
               <div class="product__info">
                 <a class="product__title product__title--catalog" href="#">Зайчик-попрыгайчик</a>
@@ -66,8 +71,8 @@
               </div>
             </li>
             <li class="catalog__item product">
-              <a class="product__picture" href="#">
-                <img class="product__picture-content" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="корзинка для белья">
+              <a class="product__picture product__picture--bowl" href="#">
+                <!--<img class="product__picture-content" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="корзинка для белья">-->
               </a>
               <div class="product__info">
                 <a class="product__title product__title--catalog" href="#">Корзинка для белья</a>
@@ -81,8 +86,8 @@
               </div>
             </li>
             <li class="catalog__item product">
-              <a class="product__picture" href="#">
-                <img class="product__picture-content" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="большая корзинка для игрушек">
+              <a class="product__picture product__picture--toys" href="#">
+                <!--<img class="product__picture-content" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="большая корзинка для игрушек">-->
               </a>
               <div class="product__info">
                 <a class="product__title product__title--catalog" href="#">Большая корзинка для игрушек</a>
@@ -110,13 +115,14 @@
             <h2 class="video__title video__title--style">Процесс производства</h2>
           </div>
           <div class="video__container">
-            <img class="video__preview" src="img/video-mobile@1x.jpg" width="256" height="150" alt="превью видео">
-            <a class="video__link" href="#">
-              <img class="video__image-play" src="img/icon-play.svg" width="101" height="77" alt="кнопка play">
+            <div class="video__preview video__preview--frame"></div>
+            <!-- <img class="video__preview" src="img/video-mobile@1x.jpg" width="256" height="150" alt="превью видео">-->
+            <a class="video__link video__image--play" href="#">
+              <!-- <img class="video__image-play" src="img/icon-play.svg" width="101" height="77" alt="кнопка play"> -->
             </a>
-            <p class="video__text-info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="video__button button" href="#">Сделать заказ</a>
           </div>
+          <p class="video__text-info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="video__button button" href="#">Сделать заказ</a>
         </div>
       </section>
 
@@ -126,6 +132,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-image" href="#"></a>
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

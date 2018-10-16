@@ -24,3 +24,58 @@
   padding-top: 28px;
   padding-bottom: 32px;
 }
+
+@media (min-width:@tablet-width) {
+  .featured {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .featured::after {
+    display: block;
+    content: "";
+    background: url("../../img/bg-zigzag-line.svg");
+    background-size: cover;
+    margin-left: -50px;
+    height: 17px;
+    width: 772px;
+    margin-top: 52px;
+  }
+
+  .featured__title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .featured__subtitle {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    line-height: 17px;
+    width: 105px;
+    padding-top: 34px;
+    margin-left: 90px;
+    text-align: center;
+  }
+
+  .featured__item-text {
+    display: inline-block;
+    width: 50%;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .featured__product-card-wrapper {
+    display: inline-block;
+    width: 50%;
+  }
+
+
+}
+
+@media (min-width:@desktop-width) {
+
+}
