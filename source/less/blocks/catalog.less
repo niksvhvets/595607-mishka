@@ -8,8 +8,28 @@
   margin-bottom: 30px;
 }
 
-.video__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+@media (min-width: @tablet-width) {
+  .catalog__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-direction: row;
+    height: 334px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 }

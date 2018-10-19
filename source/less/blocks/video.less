@@ -1,0 +1,166 @@
+.video {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 58px;
+}
+
+.video__wrapper {
+  border: 2px solid #ededed;
+  padding: 0;
+}
+
+.video__title {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.video__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 30px 26px 30px;
+}
+
+.video__container {
+  position: relative;
+}
+
+.video__preview {
+  width: 256px;
+  height: 150px;
+}
+
+.video__link {
+  width: 101px;
+  height: 77px;
+}
+
+.video__title--style {
+  margin-left: 25px;
+}
+
+.video__image-play {
+  position: absolute;
+  top: 37px;
+  left: 80px;
+}
+
+.video__text-info {
+  font-size: 13px;
+  line-height: 24px;
+  color: @text-color;
+  font-weight: 400;
+  padding: 34px;
+}
+
+.video__button {
+  width: 192px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .video__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video__header {
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .video__container {
+    order: 1;
+  }
+
+  .video__button {
+    order: 4;
+  }
+
+  .video__text-info {
+    order: 3;
+  }
+
+  .video__preview {
+    background-image: url("../../img/video-tablet@1x.jpg");
+    width: 664px;
+    height: 445px;
+  }
+
+  .video__link {
+    width: 101px;
+    height: 77px;
+  }
+
+  .video__image-play {
+    position: absolute;
+    top: 189px;
+    left: 283px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .video__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .video__container {
+    order: 1;
+  }
+
+  .video__header {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 78px;
+    width: 220px;
+  }
+
+  .video__title {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .video__text-info {
+    order: 3;
+    width: 265px;
+    position: absolute;
+    top: 140px;
+    left: 739px;
+  }
+
+  .video__button {
+    order: 4;
+    position: absolute;
+    top: 320px;
+    left: 773px;
+  }
+
+  .video__preview {
+    background-image: url("../../img/video-tablet@1x.jpg");
+    width: 668px;
+    height: 459px;
+  }
+
+  .video__image-play {
+    position: absolute;
+    top: 189px;
+    left: 283px;
+  }
+}

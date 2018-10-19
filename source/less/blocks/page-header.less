@@ -1,5 +1,12 @@
+.page-header {
+  .width-mobile;
+  margin: 0 auto;
+  width: auto;
+}
+
 .page-header__logo-image {
   margin: 22px 117px;
+  z-index: 9999;
 
   &:hover path {
     fill: @green-hover;
@@ -8,5 +15,43 @@
   &:active path,
   &:focus path {
     fill: @green-down;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    .width-table;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-header__logo {
+    z-index: 9999;
+  }
+
+  .page-header__logo-image {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    min-width: 1250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    left: 560px;
+    z-index: 9999;
+  }
+
+  .page-header__logo-image {
+    margin: 22px;
   }
 }

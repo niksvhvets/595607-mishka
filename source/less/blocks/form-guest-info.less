@@ -46,3 +46,28 @@
   color: @text-color;
   font-weight: 400;
 }
+
+@media (min-width: @tablet-width) {
+  .guest-info__notifcation {
+    position: absolute;
+    top: 215px;
+    left: 366px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .guest-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .guest-info__notifcation {
+    position: absolute;
+    top: 275px;
+    left: 652px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
