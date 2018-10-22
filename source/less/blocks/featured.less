@@ -6,7 +6,8 @@
 .featured__title {
   font-size: 24px;
   line-height: 30px;
-  padding-top: 32px;
+  padding-top: 29px;
+  letter-spacing: 0.2mm;
 }
 
 .featured__subtitle {
@@ -14,15 +15,33 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @green;
+  margin-top: 4px;
 }
 
 .featured__item-text {
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: @text-color;
-  padding-top: 28px;
-  padding-bottom: 32px;
+  padding-top: 23px;
+  padding-bottom: 18px;
+}
+
+.featured__card-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured.line-zigzag::after {
+  content: "";
+  position: absolute;
+  top: 820px;
+  left: 0px;
+  display: block;
+  width: 320px;
+  height: 7px;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-size: 320px 7px;
 }
 
 @media (min-width: @tablet-width) {

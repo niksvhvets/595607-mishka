@@ -1,17 +1,22 @@
-.guest-info {
-  padding-bottom: 30px;
+.guest-info--user-info .guest-info__item {
+  margin-bottom: 21px;
 }
 
-.guest-info__input--area {
-  border: 2px solid black;
-  width: 260px;
-  height: 142px;
-  margin-bottom: 17px;
+.guest-info--user-info .guest-info__input {
+  padding-top: 17px;
+  padding-bottom: 14px;
+}
+
+.guest-info--phone .guest-info__input {
+  padding-bottom: 16px;
+}
+
+.guest-info--email .guest-info__input {
+  padding-bottom: 16px;
 }
 
 .guest-info__item {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .guest-info__label {
@@ -24,8 +29,6 @@
 .guest-info__input {
   font-size: 17px;
   line-height: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   width: 260px;
 }
 
@@ -36,7 +39,7 @@
 
 .guest__image-icon {
   position: absolute;
-  top: 5px;
+  top: -4px;
   left: 230px;
 }
 
@@ -45,6 +48,16 @@
   line-height: 16px;
   color: @text-color;
   font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.guest-info__input--area {
+  border: 2px solid black;
+  width: 260px;
+  height: 142px;
+  margin-bottom: 17px;
+  padding-top: 13px;
+  padding-left: 17px;
 }
 
 @media (min-width: @tablet-width) {

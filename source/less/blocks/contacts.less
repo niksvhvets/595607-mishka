@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -6,12 +7,20 @@
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 42px;
+  margin-bottom: 23px;
 }
 
 .contacts__info {
-  display: table;
-  margin-bottom: 44px;
+  /*display: table;*/
+  margin-bottom: 6px;
+  width: 260px;
+}
+
+.contacts__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 27px;
 }
 
 .contacts__cell {
@@ -21,18 +30,26 @@
   color: @text-color;
 }
 
+.contacts__cell--address {
+  width: 160px;
+  margin-right: 22px;
+}
+
 .contacts__cell--green-line {
   border-bottom: 1px solid @green;
 }
 
 .contacts__map {
+  width: 320px;
   border: 0;
   background-image: url("../../img/map-mobile@1x.jpg");
-  margin-bottom: 39px;
+  margin-bottom: 36px;
+  margin-left: -30px;
 }
 
 .contacts__button {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
+  letter-spacing: 0.2mm;
 }
 
 @media (min-width: @tablet-width) {

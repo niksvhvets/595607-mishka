@@ -14,24 +14,78 @@
   display: block;
 }
 
+.about-us__image {
+  fill: #63d1bb;
+  align-self: center;
+  margin-right: 211px;
+}
+
 .about-us__advantage {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__advantage--flower {
+  margin-top: 31px;
+}
+
+.about-us__text--flower {
+  padding-top: 18px;
+}
+
+.about-us__advantage--money {
+  margin-top: 30px;
+}
+
+.about-us__text--money {
+  padding-top: 25px;
+}
+
+.about-us__advantage--heart {
+  margin-top: 35px;
+}
+
+.about-us__text--heart {
+  padding-top: 20px;
+}
+
+.about-us__advantage--ball {
+  margin-top: 31px;
+}
+
+.about-us__text--ball {
+  padding-top: 18px;
+}
+
+.about-us__advantage--rocket {
+  margin-top: 33px;
+}
+
+.about-us__text--rocket {
+  padding-top: 27px;
+}
+
+.about-us__advantage--gift {
+  margin-top: 30px;
+}
+
+.about-us__text--gift {
+  padding-top: 20px;
 }
 
 .about-us__text {
-  padding-top: 20px;
   font-size: 17px;
   line-height: 20px;
 }
 
 .about-us__reviews-wrapper {
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .about-us__reviews-title {
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 38px;
+  margin-bottom: 24px;
 }
 
 .about-us__reviews-text {
@@ -39,7 +93,7 @@
   line-height: 30px;
   color: @text-color;
   font-weight: 400;
-  margin-bottom: 70px;
+  margin-bottom: 27px;
 }
 
 .about-us__reviews-client-name {
@@ -54,12 +108,28 @@
   line-height: 30px;
   color: @text-color;
   font-weight: 400;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .about-us__toggle {
   display: inline-block;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
+}
+
+.about-us__button {
+  margin-bottom: 86px;
+}
+
+.about-us.line-zigzag::after {
+  content: "";
+  position: absolute;
+  top: 1449px;
+  left: 0px;
+  display: block;
+  width: 320px;
+  height: 7px;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-size: 320px 7px;
 }
 
 .slider__toggle {
@@ -84,7 +154,7 @@
 .slider__toggles--next {
   background-image: url("../../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
-  background-position-x: 42px;
+  background-position-x: 37px;
   background-position-y: 13px;
   width: 130px;
   height: 52px;

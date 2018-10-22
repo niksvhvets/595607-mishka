@@ -1,14 +1,25 @@
+.card__product {
+  display: block;
+}
+
 .card-product__row {
   display: table;
   width: 260px;
   height: 40px;
 }
 
-.card-product__cell {
+.card-product__cell-label {
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
-  color: @text-color;
+  margin-right: 100px;
+  width: 96px;
+}
+
+.card-product__cell-info {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .card-product__row--greyline {
@@ -16,7 +27,7 @@
 }
 
 .card-product__image--cart {
-  padding-top: 29px;
+  margin-top: 25px;
 }
 
 .card-product__cost {
@@ -26,6 +37,11 @@
   line-height: 24px;
   font-weight: bold;
   text-align: center;
+  margin: 14px 0 23px 4px;
+}
+
+.card-product__button {
+  margin-bottom: 69px;
 }
 
 @media (min-width: @tablet-width) {

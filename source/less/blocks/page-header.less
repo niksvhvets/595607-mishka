@@ -1,21 +1,47 @@
 .page-header {
   .width-mobile;
+
   margin: 0 auto;
   width: auto;
 }
 
-.page-header__logo-image {
+.page-header__logo {
+  display: block;
   margin: 22px 117px;
   z-index: 9999;
+}
 
+/*
+.page-header__logo {
   &:hover path {
     fill: @green-hover;
   }
 
-  &:active path,
-  &:focus path {
+  &:active,
+  &:focus {
     fill: @green-down;
   }
+}*/
+
+.page-header__logo-mobile {
+  display: block;
+
+  &:hover {
+    fill: @green-hover;
+  }
+
+  &:active,
+  &:focus {
+    fill: @green-down;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__logo-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,10 +56,32 @@
 
   .page-header__logo {
     z-index: 9999;
+    margin-left: 0;
   }
 
   .page-header__logo-image {
-    margin-left: 0;
+    background-image: url("../../img/logo-tablet.svg");
+  }
+
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: block;
+
+    &:hover {
+      fill: @green-hover;
+    }
+
+    &:active,
+    &:focus {
+      fill: @green-down;
+    }
+  }
+
+  .page-header__logo-desktop {
+    display: none;
   }
 }
 
@@ -49,9 +97,27 @@
     position: absolute;
     left: 560px;
     z-index: 9999;
+    margin: 22px;
   }
 
-  .page-header__logo-image {
-    margin: 22px;
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: block;
+
+    &:hover {
+      fill: @green-hover;
+    }
+
+    &:active,
+    &:focus {
+      fill: @green-down;
+    }
   }
 }
