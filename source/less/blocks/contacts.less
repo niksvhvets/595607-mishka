@@ -36,7 +36,16 @@
 }
 
 .contacts__cell--green-line {
+  cursor: pointer;
   border-bottom: 1px solid @green;
+  &:hover {
+    color: @green;
+  }
+  &:active,
+  &:focus {
+    color: #d3ede8;
+    border-bottom: 1px solid #d3ede8;
+  }
 }
 
 .contacts__map {

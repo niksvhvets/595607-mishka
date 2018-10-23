@@ -1,7 +1,7 @@
 .video {
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 58px;
+  padding-bottom: 56px;
 }
 
 .video__wrapper {
@@ -14,12 +14,16 @@
   line-height: 24px;
 }
 
+.video__title--style {
+  margin-left: 25px;
+}
+
 .video__header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 23px 30px 26px 30px;
+  justify-content: space-between;
+  padding: 20px 30px 26px 30px;
 }
 
 .video__container {
@@ -36,14 +40,28 @@
   height: 77px;
 }
 
-.video__title--style {
-  margin-left: 38px;
+.video__image {
+  display: block;
+  width: 46px;
+  height: 32px;
+  fill: #63d1bb;
+  margin-left: 4px;
 }
 
 .video__image-play {
   position: absolute;
   top: 37px;
   left: 80px;
+  fill: #62d1ba;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active,
+  &:focus {
+    transform: scale(0.8);
+    fill: #d0f1ea;
+  }
 }
 
 .video__text-info {

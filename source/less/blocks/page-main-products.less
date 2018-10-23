@@ -24,6 +24,41 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  color: white;
+  font-size: 19px;
+  line-height: 24px;
+  padding-top: 27px;
+  padding-left: 28px;
+  padding-bottom: 28px;
+}
+
+.products__name-lamp {
+  fill: #3bb09d;
+  &:hover {
+    padding-bottom: 32px;
+    fill: #29a592;
+  }
+
+  &:active,
+  &:focus {
+    color: #97e2d2;
+    fill: #44c0aa;
+  }
+}
+
+.products__name-cube {
+  fill: #3bb09d;
+  &:hover {
+    padding-bottom: 32px;
+    fill: #239f8e;
+  }
+
+  &:active,
+  &:focus {
+    color: #8dd5c9;
+    fill: #37b2a0;
+  }
 }
 
 .products__item--light-green {
@@ -38,27 +73,13 @@
   position: absolute;
   top: 23px;
   left: 244px;
-  fill: #3bb09d;
 }
 
 .products__name--icon-cube {
   position: absolute;
   top: 19px;
   left: 233px;
-  fill: #35a999;
 }
-
-.products__name {
-  position: relative;
-  color: white;
-  font-size: 19px;
-  line-height: 24px;
-  padding-top: 27px;
-  padding-left: 28px;
-  padding-bottom: 28px;
-}
-
-
 
 @media (min-width: @tablet-width) {
   .products__image-logo {

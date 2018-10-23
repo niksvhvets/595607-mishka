@@ -1,8 +1,5 @@
-.guest-info--user-info .guest-info__item {
-  margin-bottom: 21px;
-}
-
 .guest-info--user-info .guest-info__input {
+  margin-bottom: 21px;
   padding-top: 17px;
   padding-bottom: 14px;
 }
@@ -16,7 +13,13 @@
 }
 
 .guest-info__item {
+  fill: #cccccc;
   position: relative;
+  &:hover,
+  &:active,
+  &focus {
+    fill: #62d1ba;
+  }
 }
 
 .guest-info__label {
@@ -30,11 +33,26 @@
   font-size: 17px;
   line-height: 18px;
   width: 260px;
+  cursor: pointer;
+  &::placeholder {
+    color: #d2d2d2;
+  }
+
+  &:focus::placeholder {
+    color: #444444;
+  }
 }
 
 .guest-info__input--border {
   border: 0;
   border-bottom: 2px solid black;
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+  &:active,
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
 }
 
 .guest__image-icon {
@@ -58,6 +76,21 @@
   margin-bottom: 17px;
   padding-top: 13px;
   padding-left: 17px;
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+  &:active,
+  &:focus {
+    border: 2px solid #62d1ba;
+  }
+
+  &::placeholder {
+    color: #d2d2d2;
+  }
+
+  &:focus::placeholder {
+    color: #444444;
+  }
 }
 
 @media (min-width: @tablet-width) {

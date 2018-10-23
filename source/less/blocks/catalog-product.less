@@ -1,4 +1,5 @@
 .product__info {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-left: 28px;
@@ -18,6 +19,24 @@
   font-size: 17px;
   line-height: 24px;
   width: 205px;
+  fill: #cccccc;
+
+  &:hover {
+    color: #8d8d8d;
+    fill: #63d1bb;
+  }
+
+  &:active,
+  &:focus {
+    color: #cacaca;
+    fill: #d0f1ea;
+  }
+}
+
+.product__image-cart {
+  position: absolute;
+  right: 26px;
+  bottom: 32px;
 }
 
 .product__title--catalog {
@@ -66,7 +85,11 @@
   font-size: 15px;
   line-height: 24px;
   padding-bottom: 10px;
-
+  width: 205px;
+  border-top: 1px solid #ededed;
+  margin-top: 19px;
+  padding-top: 21px;
+  padding-bottom: 27px;
 }
 
 .product__link {

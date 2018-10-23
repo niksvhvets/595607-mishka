@@ -143,21 +143,25 @@
 }
 
 .slider__toggles--prev {
-  background-image: url("../../img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
-  background-position-x: 37px;
-  background-position-y: 13px;
-  width: 130px;
-  height: 52px;
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active,
+  &:focus {
+    fill: #b2b2b2;
+  }
 }
 
 .slider__toggles--next {
-  background-image: url("../../img/icon-right-arrow.svg");
-  background-repeat: no-repeat;
-  background-position-x: 37px;
-  background-position-y: 13px;
-  width: 130px;
-  height: 52px;
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active,
+  &:focus {
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: @tablet-width) {

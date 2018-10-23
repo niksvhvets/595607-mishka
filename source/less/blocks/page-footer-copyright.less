@@ -14,17 +14,26 @@
 }
 
 .copyright__link {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 6px;
+
+  &:active,
+  &:focus {
+    color: #bfbfbf;
+  }
 }
 
 .copyright__image {
-  &:hover path {
+  fill: #63d1bb;
+  &:hover {
     fill: @green-hover;
   }
 
-  &:active path,
-  &:focus path {
+  &:active ,
+  &:focus {
     fill: @green-down;
   }
 }

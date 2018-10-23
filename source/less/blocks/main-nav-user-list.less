@@ -1,4 +1,5 @@
 .user-list__item {
+  position: relative;
   display: block;
   width: 320px;
   height: 79px;
@@ -10,14 +11,23 @@
   position: relative;
   font-size: 17px;
   line-height: 24px;
-  padding: 30px 70px;
+  padding: 26px 74px;
+  fill: #d3d2d2;
+  &:hover {
+    fill: #63d1bb;
+    color: #8d8d8d;
+  }
+  &:active,
+  &:focus {
+    fill: #d0f1ea;
+    color: #cacaca;
+  }
 }
 
 .user-list__item--icon-search {
   position: absolute;
   top: 32px;
   left: 32px;
-  fill: #d3d2d2;
 }
 
 .user-list__cart {
@@ -25,14 +35,24 @@
   position: relative;
   font-size: 17px;
   line-height: 24px;
-  padding: 30px 69px;
+  padding-top: 26px;
+  padding-left: 74px;
+  fill: #d3d2d2;
+  &:hover {
+    fill: #63d1bb;
+    color: #8d8d8d;
+  }
+  &:active,
+  &:focus {
+    fill: #d0f1ea;
+    color: #cacaca;
+  }
 }
 
 .user-list__item--icon-cart {
   position: absolute;
   top: 32px;
   left: 32px;
-  fill: #d3d2d2;
 }
 
 @media (min-width: @tablet-width) {
