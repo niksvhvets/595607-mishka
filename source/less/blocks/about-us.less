@@ -1,6 +1,8 @@
 .about-us__wrapper {
-  padding-left: 30px;
+  padding-left: 29px;
   padding-right: 30px;
+  padding-top: 16px;
+  padding-bottom: 36px;
 }
 
 .about-us__title {
@@ -116,10 +118,6 @@
   margin-bottom: 35px;
 }
 
-.about-us__button {
-  margin-bottom: 86px;
-}
-
 .about-us.line-zigzag::after {
   content: "";
   position: absolute;
@@ -170,23 +168,18 @@
     background-image: url("../../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
-    background-position-y: 550px;
-  }
+    background-position-y: 640px;
 
-  .about-us::after {
-    display: block;
-    content: "";
-    background-image: url("../../img/bg-zigzag-line.svg");
-    background-size: cover;
-    height: 17px;
-    width: 768px;
-    margin-top: 52px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 700px auto;
+    }
   }
 
   .about-us__wrapper {
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 57px;
+    padding-top: 48px;
   }
 
   .about-us__title {
@@ -199,11 +192,17 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 17px;
   }
 
   .about-us__advantage {
-    width: 306px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    width: 293px;
+  }
+
+  .about-us__image {
+    margin-right: 242px;
   }
 
   .about-us__advantage--flower {
@@ -212,22 +211,36 @@
 
   .about-us__advantage--money {
     order: 3;
+    margin-top: 38px;
   }
 
   .about-us__advantage--heart {
     order: 5;
+    margin-top: 41px;
   }
 
   .about-us__advantage--ball {
     order: 2;
   }
 
+  .about-us__advantage--ball .about-us__image {
+    margin-right: 254px;
+  }
+
   .about-us__advantage--rocket {
     order: 4;
   }
 
+  .about-us__advantage--rocket .about-us__image {
+    margin-right: 250px;
+  }
+
   .about-us__advantage--gift {
     order: 6;
+  }
+
+  .about-us__advantage--gift .about-us__image {
+    margin-right: 254px;
   }
 
   .about-us__text {
@@ -237,20 +250,21 @@
 
   .about-us__reviews-wrapper {
     position: relative;
-    margin-top: 167px;
+    margin-top: 141px;
     padding-bottom: 57px;
   }
 
   .about-us__reviews-title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 48px;
   }
 
   .about-us__reviews-text {
     font-size: 17px;
     line-height: 30px;
     color: #444444;
-    margin-bottom: 65px;
+    margin-bottom: 59px;
   }
 
   .about-us__button {
@@ -265,24 +279,25 @@
   .about-us__toggle {
     position: absolute;
     margin: 0;
-    bottom: 100px;
     right: 0;
+    bottom: 87px;
+    width: 140px;
+    margin-right: 17px;
   }
 
   .slider__toggles--prev {
     border: 0;
-    background-position-x: 1px;
-    background-position-y: 13px;
-    width: 70px;
+    width: 50px;
     height: 52px;
+    padding: 0;
+    margin-right: 38px;
   }
 
   .slider__toggles--next {
     border: 0;
-    background-position-x: 15px;
-    background-position-y: 13px;
-    width: 70px;
+    width: 50px;
     height: 52px;
+    padding: 0;
   }
 }
 

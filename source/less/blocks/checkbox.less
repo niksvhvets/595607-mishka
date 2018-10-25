@@ -80,3 +80,47 @@
   display: none;
 }
 
+@media (min-width: @tablet-width) {
+  .checkbox__label {
+    width: auto;
+    font-size: 19px;
+    line-height: 18px;
+    margin-left: 27px;
+  }
+
+  .checkbox__indicator-radio {
+    width: 52px;
+    height: 52px;
+    margin-left: 15px;
+    margin-top: 8px;
+  }
+
+  .checkbox input[type="radio"]:checked + .checkbox__indicator-radio {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 32px;
+      border: 9px solid #62d1ba;
+    }
+  }
+
+  .checkbox__indicator {
+    position: relative;
+    display: block;
+    width: 54px;
+    height: 52px;
+    border: 2px solid black;
+  }
+
+  .checkbox input[type="checkbox"]:checked + .checkbox__indicator {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 18px;
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

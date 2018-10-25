@@ -18,7 +18,7 @@
 .product__title {
   font-size: 17px;
   line-height: 24px;
-  width: 205px;
+  width: 230px;
   fill: #cccccc;
 
   &:hover {
@@ -47,18 +47,6 @@
   display: block;
   width: 260px;
   height: 195px;
-}
-
-.product__picture--hare {
-  background-image: url("../../img/photo-hare-mobile@1x.jpg");
-}
-
-.product__picture--bowl {
-  background-image: url("../../img/photo-bowl-mobile@1x.jpg");
-}
-
-.product__picture--toys {
-  background-image: url("../../img/photo-toys-mobile@1x.jpg");
 }
 
 .product__parameter {
@@ -101,22 +89,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .product {
+    margin-bottom: 54px;
+  }
+
   .product__picture {
     display: block;
     width: 334px;
     height: 334px;
-  }
-
-  .product__picture--hare {
-    background-image: url("../../img/photo-hare-tablet@1x.jpg");
-  }
-
-  .product__picture--bowl {
-    background-image: url("../../img/photo-bowl-tablet@1x.jpg");
-  }
-
-  .product__picture--toys {
-    background-image: url("../../img/photo-toys-tablet@1x.jpg");
   }
 
   .product__info {
@@ -133,6 +113,10 @@
   .product__parameter {
     font-size: 15px;
     margin-bottom: 150px;
+  }
+
+  .product__parameter--margin {
+    margin-bottom: 132px;
   }
 
   .product__order {
@@ -165,18 +149,6 @@
     display: block;
     width: 316px;
     height: 462px;
-  }
-
-  .product__picture--hare {
-    background-image: url("../../img/photo-hare-desktop@1x.jpg");
-  }
-
-  .product__picture--bowl {
-    background-image: url("../../img/photo-bowl-desktop@1x.jpg");
-  }
-
-  .product__picture--toys {
-    background-image: url("../../img/photo-toys-desktop@1x.jpg");
   }
 
   .product__info {

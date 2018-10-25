@@ -58,21 +58,42 @@
 @media (min-width: @tablet-width) {
   .user-list {
     order: 2;
-    padding-left: 125px;
-  }
-
-  .user-list__item {
-    border: 0;
+    padding-left: 35px;
   }
 
   .user-list__search {
+    display: block;
+    position: relative;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 26px;
+    width: 82px;
+    height: 88px;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+
+  .user-list__item {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 79px;
+    border-top: 1px solid #ececec;
+    border: 0;
+  }
+
+  .user-list__search span {
     display: none;
   }
 
   .user-list__item--icon-search {
-    width: 82px;
-    border-right: 1px solid #ececec;
-    border-left: 1px solid #ececec;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .user-list__cart {
+    padding-top: 32px;
+    padding-left: 84px;
   }
 }
 
