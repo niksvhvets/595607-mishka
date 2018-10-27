@@ -57,6 +57,7 @@
   &:hover {
     transform: scale(1.2);
   }
+
   &:active,
   &:focus {
     transform: scale(0.8);
@@ -101,17 +102,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 30px 26px 30px;
+    order: 2;
+    align-self: flex-start;
+    padding-top: 28px;
   }
 
   .video__wrapper {
     display: flex;
     flex-direction: column;
-  }
-
-  .video__header {
-    order: 2;
-    align-self: flex-start;
-    padding-top: 28px;
   }
 
   .video__container {
@@ -221,6 +219,7 @@
       width: auto;
     }
   }
+
   .video__image {
     margin-left: 2px;
     margin-top: 9px;

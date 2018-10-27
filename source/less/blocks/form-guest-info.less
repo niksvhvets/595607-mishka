@@ -15,6 +15,7 @@
 .guest-info__item {
   fill: #cccccc;
   position: relative;
+
   &:hover,
   &:active,
   &focus {
@@ -35,6 +36,7 @@
   line-height: 18px;
   width: 260px;
   cursor: pointer;
+
   &::placeholder {
     color: #d2d2d2;
   }
@@ -47,9 +49,11 @@
 .guest-info__input--border {
   border: 0;
   border-bottom: 2px solid black;
+
   &:hover {
     border-bottom: 2px solid #62d1ba;
   }
+
   &:active,
   &:focus {
     border-bottom: 2px solid #62d1ba;
@@ -61,9 +65,11 @@
   width: 260px;
   border-bottom: 2px solid black;
   padding-bottom: 1px;
+
   &:hover {
     border-bottom: 2px solid #62d1ba;
   }
+
   &:active,
   &:focus {
     border-bottom: 2px solid #62d1ba;
@@ -91,9 +97,11 @@
   margin-bottom: 17px;
   padding-top: 13px;
   padding-left: 17px;
+
   &:hover {
     border: 2px solid #62d1ba;
   }
+
   &:active,
   &:focus {
     border: 2px solid #62d1ba;
@@ -111,7 +119,7 @@
 @media (min-width: @tablet-width) {
   .guest-info__notifcation {
     position: absolute;
-    top: 215px;
+    top: 225px;
     left: 366px;
     font-size: 17px;
     line-height: 30px;
@@ -120,6 +128,7 @@
   .guest-info__input {
     font-size: 19px;
     line-height: 18px;
+
     &::placeholder {
       letter-spacing: 0.1mm;
     }
@@ -156,6 +165,7 @@
     margin-left: 16px;
     border: 0;
     padding: 0;
+
     &::placeholder {
       background-color: #f1f1f1;
       letter-spacing: -0.3mm;
@@ -167,9 +177,11 @@
     border-bottom: 2px solid black;
     margin-left: 107px;
     padding-bottom: 13px;
+
     &:hover {
       border-bottom: 2px solid #62d1ba;
     }
+
     &:active,
     &:focus {
       border-bottom: 2px solid #62d1ba;
@@ -181,6 +193,7 @@
     margin-left: 16px;
     border: 0;
     padding: 0;
+
     &::placeholder {
       background-color: #f1f1f1;
       letter-spacing: -0.3mm;
@@ -195,15 +208,12 @@
   .guest-info__input--area {
     margin-left: 128px;
     width: 501px;
+
     &::placeholder {
       font-size: 19px;
       line-height: 18px;
       letter-spacing: 0;
     }
-  }
-
-  .guest-info__notifcation {
-    top: 225px;
   }
 }
 
@@ -215,8 +225,8 @@
 
   .guest-info__notifcation {
     position: absolute;
-    top: 275px;
-    left: 652px;
+    top: 231px;
+    left: 575px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -257,10 +267,5 @@
   .guest-info__input--area {
     margin-left: 73px;
     width: 700px;
-  }
-
-  .guest-info__notifcation {
-    top: 231px;
-    left: 575px;
   }
 }
