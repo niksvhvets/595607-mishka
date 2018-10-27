@@ -42,8 +42,21 @@
   }
 
   .page-main__title {
+    position: relative;
     font-size: 43px;
     line-height: 50px;
+    &::after {
+      display: block;
+      position: absolute;
+      top: 207px;
+      left: 0;
+      z-index: 99;
+      content: "";
+      width: 768px;
+      height: 24px;
+      background-image: url(../../img/bg-zigzag-fill.svg);
+      background-size: 768px 30px;
+    }
   }
 
   .page-main__title--gray-font {
@@ -62,6 +75,7 @@
 
   .page-main__zigzag-fill {
     display: block;
+    width: 100%;
     margin-top: -18px;
   }
 
@@ -78,27 +92,36 @@
   }
 
   .page-main__title {
-    font-size: 27px;
-    line-height: 30px;
+    font-size: 53px;
+    line-height: 57px;
     font-weight: bold;
   }
 
-  .page-main__title::after {
-    display: block;
-    position: absolute;
-    margin-top: 57px;
-    z-index: 99;
-    content: "";
-    width: 1250px;
-    height: 24px;
-    background-image: url("../../img/bg-zigzag-fill.svg");
+  .page-main__title {
+    position: relative;
+    font-size: 53px;
+    line-height: 57px;
+    &::after {
+      display: block;
+      position: absolute;
+      top: 238px;
+      left: 0;
+      z-index: 99;
+      content: "";
+      width: 1150px;
+      height: 31px;
+      background-image: url(../../img/bg-zigzag-fill.svg);
+      background-size: 1150px 34px;
+    }
   }
 
   .page-main__title--gray-font {
+    width: 1150px;
+    margin: 0 auto;
     background: @footer-font-color;
     text-align: center;
-    padding-top: 77px;
-    padding-bottom: 80px;
+    padding-top: 93px;
+    padding-bottom: 116px;
     border-top: 1px solid #ececec;
   }
 
@@ -107,10 +130,8 @@
     line-height: 30px;
     color: #444444;
     font-weight: normal;
-    padding: 100px 270px 60px 270px;
+    padding: 93px 270px 0px 274px;
   }
 
-  .page-main__zigzag-fill {
-    display: block;
-  }
+
 }

@@ -124,3 +124,43 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .checkbox {
+    width: 401px;
+  }
+
+  .checkbox__indicator-radio {
+    margin-left: 33px;
+    margin-top: 6px;
+  }
+
+  .checkbox input[type="radio"]:checked + .checkbox__indicator-radio {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 49px;
+      border: 9px solid #62d1ba;
+    }
+  }
+
+  .checkbox__indicator {
+    position: relative;
+    display: block;
+    width: 54px;
+    height: 52px;
+    border: 2px solid black;
+  }
+
+  .checkbox input[type="checkbox"]:checked + .checkbox__indicator {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 18px;
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

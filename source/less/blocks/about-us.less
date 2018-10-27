@@ -1,8 +1,45 @@
-.about-us__wrapper {
+.about-us {
+  position: relative;
   padding-left: 29px;
   padding-right: 30px;
-  padding-top: 16px;
-  padding-bottom: 36px;
+  padding-top: 27px;
+  padding-bottom: 52px;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 8px 0;
+    background-size: 320px 7px;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 17px;
+      background-position: 19px 0;
+      background-size: 768px 17px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1050px;
+      height: 23px;
+
+      background-position: 24px 0;
+      background-size: 1050px 23px;
+      transform: translateX(5%);
+    }
+
+    @media (min-width: 1200px) {
+      width: 1050px;
+      height: 23px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .about-us__title {
@@ -164,11 +201,13 @@
 
 @media (min-width: @tablet-width) {
   .about-us {
+    position: relative;
     padding: 0;
     background-image: url("../../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
     background-position-y: 640px;
+    padding-bottom: 46px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/review@2x.jpg");
@@ -307,12 +346,14 @@
     background-image: url("../../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
-    background-position-y: 550px;
-  }
+    background-position-y: 662px;
+    background-position-x: 100px;
+    padding-bottom: 102px;
 
-  .about-us::after {
-    height: 25px;
-    width: 1250px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 700px auto;
+    }
   }
 
   .about-us__wrapper {
@@ -323,6 +364,12 @@
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+    margin-left: 170px;
+    margin-top: 10px;
+  }
+
+  .about-us__reviews-title {
+    margin-left: -5px;
   }
 
   .about-us__list {
@@ -331,7 +378,23 @@
   }
 
   .about-us__advantage {
-    width: 306px;
+    width: 310px;
+  }
+
+  .about-us__advantage--ball .about-us__image {
+    margin-right: 269px;
+  }
+
+  .about-us__advantage--rocket .about-us__image {
+    margin-right: 269px;
+  }
+
+  .about-us__advantage--gift .about-us__image {
+    margin-right: 273px;
+  }
+
+  .about-us__image {
+    margin-right: 256px;
   }
 
   .about-us__reviews-wrapper {
@@ -343,7 +406,13 @@
     line-height: 57px;
   }
 
+  .about-us__reviews-text {
+    width: 770px;
+    margin-bottom: 40px;
+  }
+
   .about-us__button {
     left: 875px;
+    top: 8px;
   }
 }

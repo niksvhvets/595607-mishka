@@ -68,7 +68,7 @@
     line-height: 24px;
     padding: 26px;
     width: 82px;
-    height: 88px;
+    height: 90px;
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
   }
@@ -89,6 +89,8 @@
   .user-list__item--icon-search {
     display: block;
     margin-top: 5px;
+    height: 18px;
+    width: 19px;
   }
 
   .user-list__cart {
@@ -100,7 +102,8 @@
 @media (min-width: @desktop-width) {
   .user-list {
     display: flex;
-    margin-left: auto;
+
+    margin-left: 97px;
   }
 
   .user-list__item {
@@ -108,22 +111,31 @@
     height: 79px;
   }
 
-  .user-list__search {
+  .user-list__search span {
     display: none;
   }
 
-  .user-list__item--icon-search {
-    width: 82px;
-    border-right: 1px solid #ececec;
-    border-left: 1px solid #ececec;
+  .user-list__search {
+    margin-left: 165px;
   }
+
+  .user-list__item--icon-search {
+    height: 18px;
+    width: 19px;
+  }
+
+  .user-list__item--icon-cart {
+    position: absolute;
+    top: 34px;
+    left: 23px;
+}
 
   .user-list__cart {
     font-size: 17px;
     line-height: 24px;
     display: block;
     text-align: left;
-    margin-left: 75px;
-    margin-top: 30px;
+    padding-top: 31px;
+    padding-left: 73px;
   }
 }
