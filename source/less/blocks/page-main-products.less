@@ -2,6 +2,10 @@
   background: white;
 }
 
+.products__wrapper {
+ height: 216px;
+}
+
 .products__title {
   display: block;
   font-size: 27px;
@@ -36,13 +40,15 @@
   padding-top: 27px;
   padding-left: 28px;
   padding-bottom: 28px;
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .products__name-lamp {
   fill: #3bb09d;
 
   &:hover {
-    padding-bottom: 32px;
     fill: #29a592;
   }
 
@@ -57,7 +63,6 @@
   fill: #3bb09d;
 
   &:hover {
-    padding-bottom: 32px;
     fill: #239f8e;
   }
 
@@ -70,19 +75,27 @@
 
 .products__item--light-green {
   background: @green;
+  &:hover {
+    transform: translateY(-5px);
+    height: 108px;
+  }
 }
 
 .products__item--dark-green {
   background: @dark-green;
+  &:hover {
+    transform: translateY(-5px);
+    height: 108px;
+  }
 }
 
-.products__name--icon-lamp {
+.products__icon-lamp {
   position: absolute;
   top: 23px;
   left: 244px;
 }
 
-.products__name--icon-cube {
+.products__icon-cube {
   position: absolute;
   top: 19px;
   left: 233px;
@@ -134,6 +147,7 @@
   }
 
   .products__wrapper {
+    height: 124px;
     padding-left: 50px;
     padding-right: 50px;
     margin-top: -126px;
@@ -155,12 +169,12 @@
     padding-left: 36px;
   }
 
-  .products__name--icon-lamp {
+  .products__icon-lamp {
     top: 26px;
     left: 257px;
   }
 
-  .products__name--icon-cube {
+  .products__icon-cube {
     top: 28px;
     left: 240px;
   }
@@ -170,6 +184,29 @@
     width: 100%;
     margin-top: -18px;
   }
+
+  .products__name {
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .products__item--light-green {
+    background: @green;
+    &:hover {
+      transform: translateY(-5px);
+      height: 124px;
+    }
+  }
+
+  .products__item--dark-green {
+    background: @dark-green;
+    &:hover {
+      transform: translateY(-5px);
+      height: 124px;
+    }
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -179,6 +216,7 @@
 
   .products__wrapper {
     width: 1250px;
+    height: 124px;
     padding-left: 100px;
     padding-right: 100px;
     margin-top: -138px;
@@ -201,7 +239,7 @@
     &::after {
       display: block;
       position: absolute;
-      bottom: 15px;
+      bottom: 14px;
       left: -52px;
       z-index: 999;
       content: "";
@@ -236,15 +274,37 @@
     width: 525px;
   }
 
-  .products__name--icon-lamp {
+  .products__icon-lamp {
     background-position-x: 455px;
     top: 30px;
     left: 448px;
   }
 
-  .products__name--icon-cube {
+  .products__icon-cube {
     background-position-x: 440px;
     top: 30px;
     left: 428px;
+  }
+
+  .products__name {
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  .products__item--light-green {
+    background: @green;
+    &:hover {
+      transform: translateY(-5px);
+      height: 124px;
+    }
+  }
+
+  .products__item--dark-green {
+    background: @dark-green;
+    &:hover {
+      transform: translateY(-5px);
+      height: 124px;
+    }
   }
 }

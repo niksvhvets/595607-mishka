@@ -76,18 +76,10 @@
   }
 }
 
-.guest__image-icon {
+.guest-info__image-icon {
   position: absolute;
   top: -4px;
   left: 230px;
-}
-
-.guest-info__notifcation {
-  font-size: 14px;
-  line-height: 16px;
-  color: @text-color;
-  font-weight: 400;
-  margin-bottom: 30px;
 }
 
 .guest-info__input--area {
@@ -117,14 +109,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .guest-info__notifcation {
-    position: absolute;
-    top: 225px;
-    left: 366px;
-    font-size: 17px;
-    line-height: 30px;
-  }
-
   .guest-info__input {
     font-size: 19px;
     line-height: 18px;
@@ -200,13 +184,12 @@
     }
   }
 
-  .guest__image-icon {
+  .guest-info__image-icon {
     top: -4px;
     left: 554px;
   }
 
   .guest-info__input--area {
-    margin-left: 128px;
     width: 501px;
 
     &::placeholder {
@@ -221,14 +204,6 @@
   .guest-info {
     display: flex;
     flex-direction: column;
-  }
-
-  .guest-info__notifcation {
-    position: absolute;
-    top: 231px;
-    left: 575px;
-    font-size: 17px;
-    line-height: 30px;
   }
 
   .guest-info--user-info .guest-info__item {
@@ -246,7 +221,7 @@
     margin-left: 18px;
   }
 
-  .guest-info--phone .guest__image-icon {
+  .guest-info--phone .guest-info__image-icon {
     left: 719px;
   }
 
@@ -260,7 +235,7 @@
     margin-left: 18px;
   }
 
-  .guest-info--email .guest__image-icon {
+  .guest-info--email .guest-info__image-icon {
     left: 716px;
   }
 
