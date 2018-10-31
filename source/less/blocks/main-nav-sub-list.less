@@ -2,6 +2,17 @@
   display: none;
 }
 
+.sub-list__link {
+  &:hover {
+    color: #666666;
+  }
+
+  &:active,
+  &:focus {
+    color: #b2b2b2;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .sub-list {
     display: block;
@@ -9,8 +20,9 @@
     line-height: 24px;
     font-weight: 400;
     position: absolute;
-    top: 113px;
-    left: 235px;
+    top: 107px;
+    left: 489px;
+    z-index: 1;
   }
 
   .sub-list__item--arrivals {
@@ -28,12 +40,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 400;
-    position: absolute;
-    top: 113px;
-    left: 0;
+    top: 106px;
+    left: 100px;
   }
 
   .sub-list__item--arrivals {

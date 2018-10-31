@@ -1,21 +1,36 @@
 .page-header {
   .width-mobile;
+
+  position: relative;
   margin: 0 auto;
   width: auto;
 }
 
-.page-header__logo-image {
+.page-header__logo {
+  display: block;
   margin: 22px 117px;
   z-index: 9999;
+}
 
-  &:hover path {
-    fill: @green-hover;
+.page-header__logo-mobile {
+  display: block;
+
+  &:hover {
+    fill: #666666;
   }
 
-  &:active path,
-  &:focus path {
-    fill: @green-down;
+  &:active,
+  &:focus {
+    fill: #b2b2b2;
   }
+}
+
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__logo-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,10 +45,28 @@
 
   .page-header__logo {
     z-index: 9999;
+    margin-left: 0;
   }
 
-  .page-header__logo-image {
-    margin-left: 0;
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: block;
+
+    &:hover {
+      fill: #666666;
+    }
+
+    &:active,
+    &:focus {
+      fill: #b2b2b2;
+    }
+  }
+
+  .page-header__logo-desktop {
+    display: none;
   }
 }
 
@@ -43,15 +76,34 @@
     padding-left: 100px;
     padding-right: 100px;
     position: relative;
+    margin-bottom: 9px;
   }
 
   .page-header__logo {
     position: absolute;
-    left: 560px;
+    left: 541px;
     z-index: 9999;
+    margin: 9px;
   }
 
-  .page-header__logo-image {
-    margin: 22px;
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: none;
+  }
+
+  .page-header__logo-desktop {
+    display: block;
+
+    &:hover {
+      fill: #666666;
+    }
+
+    &:active,
+    &:focus {
+      fill: #b2b2b2;
+    }
   }
 }

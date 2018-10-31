@@ -1,16 +1,25 @@
 .site-list__item {
+  display: block;
   width: 320px;
   height: 79px;
   border-top: 1px solid #ececec;
 }
 
 .site-list__link {
+  display: block;
   font-size: 17px;
   line-height: 24px;
-  display: block;
-  text-align: left;
-  margin-left: 75px;
-  margin-top: 30px;
+  padding-top: 26px;
+  padding-left: 75px;
+
+  &:hover {
+    color: #666666;
+  }
+
+  &:active,
+  &:focus {
+    color: #b2b2b2;
+  }
 }
 
 .site-list__item--delivery {
@@ -21,8 +30,9 @@
   .site-list {
     order: 2;
     position: absolute;
-    top: 88px;
-    left: -205px;
+    top: 82px;
+    left: 50px;
+    z-index: 1;
   }
 
   .site-list__item {
@@ -35,6 +45,8 @@
     margin: 0 auto;
     font-size: 15px;
     line-height: 24px;
+    padding-top: 0;
+    padding-left: 0;
   }
 
   .site-list__delivery {
@@ -67,7 +79,7 @@
 
   .site-list__item {
     width: 184px;
-    height: 79px;
+    height: 88px;
     border-top: 0;
     padding: 0;
   }
@@ -77,6 +89,6 @@
   }
 
   .site-list__item:last-of-type {
-    margin-left: 30px;
+    margin-left: 36px;
   }
 }

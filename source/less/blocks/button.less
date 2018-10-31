@@ -2,7 +2,7 @@
   display: block;
   width: 260px;
   text-align: center;
-  padding: 18px 0;
+  padding: 14px 0;
   border: 2px solid @button-border;
   color: @button-border;
   font-size: 17px;
@@ -10,4 +10,14 @@
   font-weight: bold;
   background: transparent;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active,
+  &:focus {
+    color: #8d8d8d;
+  }
 }

@@ -1,6 +1,46 @@
-.about-us__wrapper {
-  padding-left: 30px;
+.about-us {
+  position: relative;
+  padding-left: 29px;
   padding-right: 30px;
+  padding-top: 27px;
+  padding-bottom: 52px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 8px 0;
+    background-size: 320px 7px;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 17px;
+      background-position: 19px 0;
+      background-size: 768px 17px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1050px;
+      height: 23px;
+
+      background-position: 24px 0;
+      background-size: 1050px 23px;
+      transform: translateX(5%);
+    }
+
+    @media (min-width: 1200px) {
+      width: 1050px;
+      height: 23px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .about-us__title {
@@ -14,24 +54,78 @@
   display: block;
 }
 
+.about-us__image {
+  fill: #63d1bb;
+  align-self: center;
+  margin-right: 211px;
+}
+
 .about-us__advantage {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__advantage--flower {
+  margin-top: 31px;
+}
+
+.about-us__text--flower {
+  padding-top: 18px;
+}
+
+.about-us__advantage--money {
+  margin-top: 30px;
+}
+
+.about-us__text--money {
+  padding-top: 25px;
+}
+
+.about-us__advantage--heart {
+  margin-top: 35px;
+}
+
+.about-us__text--heart {
+  padding-top: 20px;
+}
+
+.about-us__advantage--ball {
+  margin-top: 31px;
+}
+
+.about-us__text--ball {
+  padding-top: 18px;
+}
+
+.about-us__advantage--rocket {
+  margin-top: 33px;
+}
+
+.about-us__text--rocket {
+  padding-top: 27px;
+}
+
+.about-us__advantage--gift {
+  margin-top: 30px;
+}
+
+.about-us__text--gift {
+  padding-top: 20px;
 }
 
 .about-us__text {
-  padding-top: 20px;
   font-size: 17px;
   line-height: 20px;
 }
 
 .about-us__reviews-wrapper {
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .about-us__reviews-title {
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 38px;
+  margin-bottom: 24px;
 }
 
 .about-us__reviews-text {
@@ -39,7 +133,7 @@
   line-height: 30px;
   color: @text-color;
   font-weight: 400;
-  margin-bottom: 70px;
+  margin-bottom: 27px;
 }
 
 .about-us__reviews-client-name {
@@ -54,65 +148,50 @@
   line-height: 30px;
   color: @text-color;
   font-weight: 400;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .about-us__toggle {
   display: inline-block;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 
-.slider__toggle {
+.about-us.line-zigzag::after {
+  content: "";
+  position: absolute;
+  top: 1449px;
+  left: 0;
   display: block;
-  float: left;
-  width: 130px;
-  height: 52px;
-  border: 1px solid @text-color;
-  background: transparent;
-  cursor: pointer;
+  width: 320px;
+  height: 7px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: 320px 7px;
 }
 
-.slider__toggles--prev {
-  background-image: url("../../img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
-  background-position-x: 37px;
-  background-position-y: 13px;
-  width: 130px;
-  height: 52px;
-}
-
-.slider__toggles--next {
-  background-image: url("../../img/icon-right-arrow.svg");
-  background-repeat: no-repeat;
-  background-position-x: 42px;
-  background-position-y: 13px;
-  width: 130px;
-  height: 52px;
+.about-us__button {
+  margin-top: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .about-us {
+    position: relative;
     padding: 0;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
-    background-position-y: 550px;
-  }
+    background-position-y: 640px;
+    padding-bottom: 46px;
 
-  .about-us::after {
-    display: block;
-    content: "";
-    background-image: url("../../img/bg-zigzag-line.svg");
-    background-size: cover;
-    height: 17px;
-    width: 768px;
-    margin-top: 52px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 700px auto;
+    }
   }
 
   .about-us__wrapper {
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 57px;
+    padding-top: 48px;
   }
 
   .about-us__title {
@@ -125,11 +204,17 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 17px;
   }
 
   .about-us__advantage {
-    width: 306px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    width: 293px;
+  }
+
+  .about-us__image {
+    margin-right: 242px;
   }
 
   .about-us__advantage--flower {
@@ -138,22 +223,36 @@
 
   .about-us__advantage--money {
     order: 3;
+    margin-top: 38px;
   }
 
   .about-us__advantage--heart {
     order: 5;
+    margin-top: 41px;
   }
 
   .about-us__advantage--ball {
     order: 2;
   }
 
+  .about-us__advantage--ball .about-us__image {
+    margin-right: 254px;
+  }
+
   .about-us__advantage--rocket {
     order: 4;
   }
 
+  .about-us__advantage--rocket .about-us__image {
+    margin-right: 250px;
+  }
+
   .about-us__advantage--gift {
     order: 6;
+  }
+
+  .about-us__advantage--gift .about-us__image {
+    margin-right: 254px;
   }
 
   .about-us__text {
@@ -163,20 +262,21 @@
 
   .about-us__reviews-wrapper {
     position: relative;
-    margin-top: 167px;
+    margin-top: 141px;
     padding-bottom: 57px;
   }
 
   .about-us__reviews-title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 48px;
   }
 
   .about-us__reviews-text {
     font-size: 17px;
     line-height: 30px;
     color: #444444;
-    margin-bottom: 65px;
+    margin-bottom: 59px;
   }
 
   .about-us__button {
@@ -191,39 +291,27 @@
   .about-us__toggle {
     position: absolute;
     margin: 0;
-    bottom: 100px;
     right: 0;
-  }
-
-  .slider__toggles--prev {
-    border: 0;
-    background-position-x: 1px;
-    background-position-y: 13px;
-    width: 70px;
-    height: 52px;
-  }
-
-  .slider__toggles--next {
-    border: 0;
-    background-position-x: 15px;
-    background-position-y: 13px;
-    width: 70px;
-    height: 52px;
+    bottom: 87px;
+    width: 140px;
+    margin-right: 17px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about-us {
     padding: 0;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
-    background-position-y: 550px;
-  }
+    background-position-y: 662px;
+    background-position-x: 100px;
+    padding-bottom: 102px;
 
-  .about-us::after {
-    height: 25px;
-    width: 1250px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 700px auto;
+    }
   }
 
   .about-us__wrapper {
@@ -234,6 +322,18 @@
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+    margin-left: 170px;
+    margin-top: 10px;
+  }
+
+  .about-us__reviews-title {
+    margin-left: -5px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__toggle {
+    margin-right: 6px;
   }
 
   .about-us__list {
@@ -242,19 +342,48 @@
   }
 
   .about-us__advantage {
-    width: 306px;
+    width: 296px;
+  }
+
+  .about-us__advantage--flower .about-us__image {
+    margin-right: 248px;
+  }
+
+  .about-us__advantage--money .about-us__image {
+    margin-right: 245px;
+  }
+
+  .about-us__advantage--heart .about-us__image {
+    margin-right: 246px;
+  }
+
+  .about-us__advantage--ball .about-us__image {
+    margin-right: 256px;
+  }
+
+  .about-us__advantage--rocket .about-us__image {
+    margin-right: 255px;
+  }
+
+  .about-us__advantage--gift .about-us__image {
+    margin-right: 261px;
+  }
+
+  .about-us__image {
+    margin-right: 256px;
   }
 
   .about-us__reviews-wrapper {
     padding-left: 175px;
   }
 
-  .about-us__reviews-title {
-    font-size: 53px;
-    line-height: 57px;
+  .about-us__reviews-text {
+    width: 770px;
+    margin-bottom: 40px;
   }
 
   .about-us__button {
     left: 875px;
+    top: -33px;
   }
 }

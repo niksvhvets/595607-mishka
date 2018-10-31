@@ -1,4 +1,5 @@
 .product__info {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-left: 28px;
@@ -17,10 +18,35 @@
 .product__title {
   font-size: 17px;
   line-height: 24px;
+  width: 230px;
+  fill: #cccccc;
+
+  &:hover {
+    color: #8d8d8d;
+  }
+
+  &:active,
+  &:focus {
+    color: #cacaca;
+  }
+}
+
+.product__image-cart {
+  cursor: pointer;
+  fill: #d3d2d2;
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active,
+  &:focus {
+    fill: #d0f1ea;
+  }
 }
 
 .product__title--catalog {
-  margin-top: 32px;
+  margin-top: 25px;
 }
 
 .product__picture {
@@ -29,24 +55,12 @@
   height: 195px;
 }
 
-.product__picture--hare {
-  background-image: url("../../img/photo-hare-mobile@1x.jpg");
-}
-
-.product__picture--bowl {
-  background-image: url("../../img/photo-bowl-mobile@1x.jpg");
-}
-
-.product__picture--toys {
-  background-image: url("../../img/photo-toys-mobile@1x.jpg");
-}
-
 .product__parameter {
   font-size: 13px;
   line-height: 30px;
   color: @text-color;
   font-weight: 400;
-  margin-top: 16px;
+  margin-top: 5px;
 }
 
 .product__order {
@@ -57,13 +71,21 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 28px;
+  padding-top: 12px;
+  padding-bottom: 16px;
 }
 
 .product__cost {
   font-size: 15px;
   line-height: 24px;
+  width: 205px;
+  border-top: 1px solid #ededed;
+  margin-top: 19px;
+  padding-top: 21px;
+  padding-bottom: 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .product__link {
@@ -75,22 +97,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .product {
+    margin-bottom: 54px;
+  }
+
   .product__picture {
     display: block;
     width: 334px;
     height: 334px;
-  }
-
-  .product__picture--hare {
-    background-image: url("../../img/photo-hare-tablet@1x.jpg");
-  }
-
-  .product__picture--bowl {
-    background-image: url("../../img/photo-bowl-tablet@1x.jpg");
-  }
-
-  .product__picture--toys {
-    background-image: url("../../img/photo-toys-tablet@1x.jpg");
   }
 
   .product__info {
@@ -109,12 +123,17 @@
     margin-bottom: 150px;
   }
 
+  .product__parameter--margin {
+    margin-bottom: 132px;
+  }
+
   .product__order {
     margin: 0;
     padding-top: 20px;
   }
 
   .product__cost {
+    width: 268px;
     font-size: 17px;
   }
 }
@@ -132,7 +151,7 @@
   }
 
   .product__title--catalog {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 
   .product__picture {
@@ -141,29 +160,17 @@
     height: 462px;
   }
 
-  .product__picture--hare {
-    background-image: url("../../img/photo-hare-desktop@1x.jpg");
-  }
-
-  .product__picture--bowl {
-    background-image: url("../../img/photo-bowl-desktop@1x.jpg");
-  }
-
-  .product__picture--toys {
-    background-image: url("../../img/photo-toys-desktop@1x.jpg");
-  }
-
   .product__info {
     width: 316px;
   }
 
   .product__parameter {
     font-size: 15px;
-    margin-bottom: 45px;
+    margin-bottom: 19px;
   }
 
   .product__parameter--margin {
-    margin-bottom: 21px;
+    margin-bottom: -5px;
   }
 
   .product__order {
@@ -179,7 +186,7 @@
   }
 
   .product__cost {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 24px;
   }
 
