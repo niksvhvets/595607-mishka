@@ -16,7 +16,7 @@
 
 .products__image-logo {
   border-top: 1px solid #ececec;
-  background-image: url("../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg"), url("../img/hero-mobile@1x.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: -19px;
@@ -24,8 +24,8 @@
   min-height: 282px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/hero-mobilet@2x.jpg");
-    width: 575px auto;
+    background-image: url("../img/hero-mobilet@2x.jpg"), url("../img/hero-mobile@2x.webp");
+    width: cover;
   }
 }
 
@@ -111,7 +111,7 @@
 @media (min-width: @tablet-width) {
   .products__image-logo {
     border-top: 1px solid #ececec;
-    background-image: url("../img/hero-tablet@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg"), url("../img/hero-tablet@1x.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -6px;
@@ -133,7 +133,7 @@
     }
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/hero-tablet@2x.jpg");
+      background-image: url("../img/hero-tablet@2x.jpg"), url("../img/hero-tablet@2x.webp");
     }
   }
 
@@ -226,7 +226,7 @@
 
   .products__image-logo {
     border-top: 1px solid #ececec;
-    background-image: url("../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg"), url("../img/hero-desktop@1x.webp");
     background-size: auto;
     background-repeat: no-repeat;
     background-position-y: -1px;
@@ -252,7 +252,7 @@
     }
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/hero-desktop@2x.jpg");
+      background-image: url("../img/hero-desktop@2x.jpg"), url("../img/hero-desktop@2x.webp");
       width: 2300px auto;
     }
   }
