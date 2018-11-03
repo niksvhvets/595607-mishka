@@ -167,6 +167,16 @@
             </div>
 
             <div class="form__container form__container--phone form__container--gray-font">
+              <div class="form__labeled-field">
+                <label class="form__label form__label--line" for="phone">Тел</label>
+                <div class="form__input-container">
+                  <input class="form__input form__input--phone" type="text" name="phone" id="phone" placeholder="+7 XXX XXX XX XX*" required>
+                  <svg class="form__image-icon" width="24.829px" height="24.333px">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+              <!--
               <span class="form__title form__title--line">Тел</span>
               <ul class="form__list guest-info guest-info--phone">
                 <li class="guest-info__item">
@@ -179,9 +189,20 @@
                   </svg>
                 </li>
               </ul>
+              -->
             </div>
 
             <div class="form__container form__container--email form__container--gray-font">
+              <div class="form__labeled-field">
+                <label class="form__label form__label--short-line" for="email">E-mail</label>
+                <div class="form__input-container">
+                  <input class="form__input form__input--email" type="text" name="email" id="email" placeholder="Ваш Email*" required>
+                  <svg class="form__image-icon" width="32px" height="32px">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+              <!--
               <span class="form__title form__title--short-line">E-mail</span>
               <ul class="form__list guest-info guest-info--email">
                 <li class="guest-info__item">
@@ -194,9 +215,16 @@
                   </svg>
                 </li>
               </ul>
+              -->
             </div>
 
             <div class="form__container form__container--add">
+              <div class="form__labeled-field">
+                  <label class="form__label form__label--line" for="email">Доп</label>
+                  <textarea class="form__input form__input--area" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+
+              <!--
               <span class="form__title form__title--line">Доп</span>
               <ul class="form__list guest-info">
                 <li class="guest-info__item">
@@ -205,6 +233,7 @@
                   </label>
                 </li>
               </ul>
+              -->
               <p class="form__notifcation">*Поля обязательны для заполнения</p>
             </div>
 
