@@ -158,6 +158,7 @@
   border: 0;
   border-bottom: 2px solid black;
   font-family: inherit;
+  font-size: 17px;
   padding-top: 24px;
   padding-bottom: 15px;
   cursor: pointer;
@@ -242,11 +243,6 @@
     align-items: end;
   }
 
-  .form__fieldset {
-    padding: 0;
-    position: relative;
-  }
-
   .form__title--line {
     &::after {
       display: none;
@@ -302,8 +298,8 @@
   }
 
   .form__container--phone {
-    padding-top: 51px;
-    padding-bottom: 20px;
+    padding-top: 44px;
+    padding-bottom: 13px;
     margin-bottom: 0;
   }
 
@@ -315,7 +311,7 @@
   .form__container--email {
     padding-top: 7px;
     padding-bottom: 49px;
-    margin-bottom: 4px;
+    margin-bottom: 9px;
   }
 
   .form__container--email .form__title {
@@ -324,7 +320,7 @@
 
   .form__container--add {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 21px;
@@ -336,6 +332,8 @@
 
   .form__container--add .form__input--area {
     width: 501px;
+    font-size: 19px;
+    line-height: 18px;
 
     &::placeholder {
       font-size: 19px;
@@ -344,16 +342,14 @@
   }
 
   .form__button {
-    position: absolute;
-    margin-top: -64px;
+    order: 1;
     width: 230px;
   }
 
   .form__notifcation {
+    order: 2;
     font-size: 17px;
     line-height: 30px;
-    margin-left: auto;
-    margin-top: 45px;
   }
 
   .form__label--line::after {
@@ -406,6 +402,8 @@
     border: 0;
     border-bottom: 2px solid black;
     font-family: inherit;
+    font-size: 19px;
+    line-height: 18px;
     background-color: #f1f1f1;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -447,13 +445,22 @@
     right: 22px;
     bottom: 9px;
   }
+
+  .form__footer {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 39px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form {
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 35px;
+    padding-bottom: 21px;
   }
 
   .form__container {
@@ -494,11 +501,6 @@
     padding-left: 61px;
   }
 
-  .form__fieldset {
-    padding: 0;
-    position: relative;
-  }
-
   .form__container--type .form__title {
     margin-top: 20px;
     margin-right: 42px;
@@ -531,8 +533,8 @@
   }
 
   .form__container--phone {
-    padding-top: 51px;
-    padding-bottom: 10px;
+    padding-top: 43px;
+    padding-bottom: 0;
     padding-left: 61px;
     margin-bottom: 0;
   }
@@ -631,14 +633,17 @@
     margin-right: 74px;
   }
 
-  .form__button {
-    margin-left: 174px;
-    margin-top: -69px;
-  }
-
   .form__notifcation {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 0;
+  }
+
+  .form__footer {
+    width: 1050px;
+  }
+
+  .form__button {
+    margin-left: 113px;
   }
 }
