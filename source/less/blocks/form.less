@@ -35,7 +35,7 @@
 }
 
 .form__container--user-info {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .form__container--phone .form__title {
@@ -103,12 +103,137 @@
   cursor: pointer;
 }
 
+.form__labeled-field {
+  width: 260px;
+}
+
+.form__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #62d1ba;
+  margin-right: 82px;
+}
+
+.form__label--line::after {
+  display: block;
+  content: "";
+  border: 0.5px solid #62d1ba;
+  width: 198px;
+  height: 0;
+}
+
+.form__label--short-line::after {
+  display: block;
+  content: "";
+  border: 0.5px solid #62d1ba;
+  width: 179px;
+  height: 0;
+}
+
+.form__input-container {
+  position: relative;
+  fill: #cccccc;
+
+  &:hover {
+    fill: #62d1ba;
+  }
+}
+
+.form__input--phone {
+  &::placeholder {
+    color: #bdbdbd;
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: 0.2mm;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid black;
+  font-family: inherit;
+  font-size: 17px;
+  padding-top: 24px;
+  padding-bottom: 15px;
+  cursor: pointer;
+
+  &::placeholder {
+    color: #bdbdbd;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:active,
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus::placeholder {
+    color: #444444;
+  }
+}
+
+.form__container--phone .form__image-icon {
+  position: absolute;
+  right: 7px;
+  bottom: 17px;
+}
+
+.form__container--email .form__label {
+  margin-right: 55px;
+}
+
+.form__container--email .form__image-icon {
+  position: absolute;
+  right: 3px;
+  bottom: 11px;
+}
+
+.form__container--add .form__input--area {
+  border: 2px solid black;
+  background-color: white;
+  width: 260px;
+  height: 142px;
+  margin-bottom: 13px;
+  padding-top: 13px;
+  padding-left: 17px;
+  margin-top: 20px;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #62d1ba;
+  }
+
+  &::placeholder {
+    color: #d2d2d2;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &:focus::placeholder {
+    color: #444444;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .form {
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 48px;
+    padding-bottom: 35px;
   }
 
   .form__container {
@@ -116,11 +241,6 @@
     display: flex;
     flex-direction: row;
     align-items: end;
-  }
-
-  .form__fieldset {
-    padding: 0;
-    position: relative;
   }
 
   .form__title--line {
@@ -178,8 +298,8 @@
   }
 
   .form__container--phone {
-    padding-top: 64px;
-    padding-bottom: 20px;
+    padding-top: 44px;
+    padding-bottom: 13px;
     margin-bottom: 0;
   }
 
@@ -189,8 +309,9 @@
   }
 
   .form__container--email {
-    padding-top: 18px;
-    padding-bottom: 44px;
+    padding-top: 7px;
+    padding-bottom: 49px;
+    margin-bottom: 9px;
   }
 
   .form__container--email .form__title {
@@ -199,7 +320,7 @@
 
   .form__container--add {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 21px;
@@ -209,16 +330,129 @@
     padding-top: 16px;
   }
 
+  .form__container--add .form__input--area {
+    width: 501px;
+    font-size: 19px;
+    line-height: 18px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
   .form__button {
-    margin-top: -69px;
+    order: 1;
     width: 230px;
   }
 
   .form__notifcation {
+    order: 2;
     font-size: 17px;
     line-height: 30px;
-    margin-left: auto;
-    margin-top: 45px;
+  }
+
+  .form__label--line::after {
+    display: none;
+  }
+
+  .form__label--short-line::after {
+    display: none;
+  }
+
+  .form__labeled-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 668px;
+  }
+
+  .form__label {
+    width: auto;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #62d1ba;
+    margin-right: 82px;
+  }
+
+  .form__input-container {
+    position: relative;
+    width: 501px;
+    display: flex;
+    flex-direction: row;
+    fill: #cccccc;
+
+    &:hover {
+      fill: #62d1ba;
+    }
+  }
+
+  .form__input--phone {
+    &::placeholder {
+      color: #bdbdbd;
+      font-size: 19px;
+      line-height: 18px;
+      letter-spacing: 0;
+    }
+  }
+
+  .form__input {
+    border: 0;
+    border-bottom: 2px solid black;
+    font-family: inherit;
+    font-size: 19px;
+    line-height: 18px;
+    background-color: #f1f1f1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 17px;
+    cursor: pointer;
+
+    &::placeholder {
+      color: #bdbdbd;
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+    &:hover {
+      border-bottom: 2px solid #62d1ba;
+    }
+
+    &:active,
+    &:focus {
+      border-bottom: 2px solid #62d1ba;
+    }
+
+    &:focus::placeholder {
+      color: #444444;
+    }
+  }
+
+  .form__container--phone .form__image-icon {
+    position: absolute;
+    right: 26px;
+    bottom: 17px;
+  }
+
+  .form__container--email .form__label {
+    margin-right: 55px;
+  }
+
+  .form__container--email .form__image-icon {
+    position: absolute;
+    right: 22px;
+    bottom: 9px;
+  }
+
+  .form__footer {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 39px;
   }
 }
 
@@ -226,7 +460,7 @@
   .form {
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 51px;
+    padding-bottom: 21px;
   }
 
   .form__container {
@@ -267,11 +501,6 @@
     padding-left: 61px;
   }
 
-  .form__fieldset {
-    padding: 0;
-    position: relative;
-  }
-
   .form__container--type .form__title {
     margin-top: 20px;
     margin-right: 42px;
@@ -304,20 +533,95 @@
   }
 
   .form__container--phone {
-    padding-top: 63px;
-    padding-bottom: 10px;
+    padding-top: 43px;
+    padding-bottom: 0;
+    padding-left: 61px;
     margin-bottom: 0;
   }
 
-  .form__container--phone .form__title {
-    margin-left: 31px;
+  .form__labeled-field {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 813px;
+  }
+
+  .form__label {
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #62d1ba;
+    margin-right: 82px;
+  }
+
+  .form__input-container {
+    position: relative;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    fill: #cccccc;
+
+    &:hover {
+      fill: #62d1ba;
+    }
+  }
+
+  .form__input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid black;
+    font-family: inherit;
+    background-color: #f1f1f1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 17px;
+    cursor: pointer;
+
+    &::placeholder {
+      color: #bdbdbd;
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+    &:hover {
+      border-bottom: 2px solid #62d1ba;
+    }
+
+    &:active,
+    &:focus {
+      border-bottom: 2px solid #62d1ba;
+    }
+
+    &:focus::placeholder {
+      color: #444444;
+    }
+  }
+
+  .form__container--phone .form__image-icon {
+    position: absolute;
+    right: 7px;
+    bottom: 17px;
+  }
+
+  .form__container--email .form__label {
+    margin-right: 55px;
+  }
+
+  .form__container--email .form__image-icon {
+    position: absolute;
+    right: 3px;
+    bottom: 11px;
+  }
+
+  .form__container--add .form__input--area {
+    width: 700px;
   }
 
   .form__container--email {
-    padding-top: 29px;
-    padding-bottom: 44px;
+    padding-top: 18px;
+    padding-bottom: 48px;
     padding-left: 61px;
-    margin-bottom: 21px;
+    margin-bottom: 0;
   }
 
   .form__container--add {
@@ -325,15 +629,21 @@
     width: 905px;
   }
 
-  .form__button {
-    margin-left: 174px;
-    margin-top: -70px;
+  .form__container--add .form__label {
+    margin-right: 74px;
   }
 
   .form__notifcation {
     font-size: 17px;
     line-height: 30px;
-    margin-top: 42px;
     margin-bottom: 0;
+  }
+
+  .form__footer {
+    width: 1050px;
+  }
+
+  .form__button {
+    margin-left: 113px;
   }
 }
