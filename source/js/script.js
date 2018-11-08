@@ -53,4 +53,3 @@ openModalWindowIndex.forEach(function(openModalWindowIndex) {
     modalBackdrop.classList.remove('is-visible');
   });
 });
-
