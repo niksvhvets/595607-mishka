@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-mobile" width="85.589" height="35.034">
@@ -174,20 +181,6 @@
                 </svg>
               </div>
             </div>
-            <!--
-            <span class="form__title form__title--line">Тел</span>
-            <ul class="form__list guest-info guest-info--phone">
-              <li class="guest-info__item">
-                <label class="guest-info__label guest-info__label--border">
-                  <span class="visually-hidden">Тел</span>
-                  <input class="guest-info__input" type="text" name="phone" placeholder="+7 XXX XXX XX XX*" required>
-                </label>
-                <svg class="guest-info__image-icon" width="24.829" height="24.333">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </li>
-            </ul>
-            -->
           </div>
 
           <div class="form__container form__container--email form__container--gray-font">
@@ -200,20 +193,6 @@
                 </svg>
               </div>
             </div>
-            <!--
-            <span class="form__title form__title--short-line">E-mail</span>
-            <ul class="form__list guest-info guest-info--email">
-              <li class="guest-info__item">
-                <label class="guest-info__label guest-info__label--border">
-                  <span class="visually-hidden">E-mail</span>
-                  <input class="guest-info__input" type="text" name="email" placeholder="Ваш Email*" required>
-                </label>
-                <svg class="guest-info__image-icon" width="32" height="32">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-              </li>
-            </ul>
-            -->
           </div>
 
           <div class="form__container form__container--add">
@@ -221,24 +200,11 @@
                 <label class="form__label form__label--line" for="email">Доп</label>
                 <textarea class="form__input form__input--area" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
-            <!--
-            <span class="form__title form__title--line">Доп</span>
-            <ul class="form__list guest-info">
-              <li class="guest-info__item">
-                <label class="guest-info__label">
-                  <textarea class="guest-info__input guest-info__input--area" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-                </label>
-              </li>
-            </ul>
-            -->
             <div class="form__footer">
               <p class="form__notifcation">*Поля обязательны для заполнения</p>
               <input class="form__button button" type="submit" value="Отправить заказ" aria-label="отправить заказ">
             </div>
-            <!-- <p class="form__notifcation">*Поля обязательны для заполнения</p> -->
           </div>
-
-          <!-- <input class="form__button button" type="submit" value="Отправить заказ" aria-label="отправить заказ"> -->
         </form>
       </div>
     </main>
@@ -250,7 +216,7 @@
         <div class="page-footer__box">
           <a class="page-footer__logo" href="#">
             <svg class="page-footer__logo-image" width="101.615" height="34.056">
-              <use xlink:href="img/sprite.svg#footer-logo"></use>
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
           </a>
         </div>
@@ -259,21 +225,21 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="ccылка на инстаграм">
                 <svg width="21.769" height="21.334">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="ссылка на фейсбук">
                 <svg width="14.962" height="27.718">
-                  <use xlink:href="img/sprite.svg#fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="ссылка на твиттер">
                 <svg width="23.494" height="20.168">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -284,28 +250,12 @@
             <b class="copyright__text">Разработано</b>
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__image" width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#academy"></use>
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

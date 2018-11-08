@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-mobile" width="85.589" height="35.034">
@@ -83,9 +90,11 @@
                 <a class="product__title product__title--catalog" href="#">Зайчик-попрыгайчик</a>
                 <span class="product__parameter">Рост 30 см, вес 200 г</span>
                 <span class="product__cost">1 200 руб.
-                  <svg class="product__image-cart" id="hare" width="20.294" height="18.849">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
-                  </svg>
+                  <a href="#">
+                    <svg class="product__image-cart" id="hare" width="20.294" height="18.849">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
                 </span>
               </div>
             </li>
@@ -104,9 +113,11 @@
                 <a class="product__title product__title--catalog" href="#">Корзинка для белья</a>
                 <span class="product__parameter">Диаметр 15 см, высота 10 см</span>
                 <span class="product__cost">690 руб.
-                  <svg class="product__image-cart" width="20.294" height="18.849">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
-                  </svg>
+                  <a href="#">
+                    <svg class="product__image-cart" width="20.294" height="18.849">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
                 </span>
               </div>
             </li>
@@ -125,9 +136,11 @@
                 <a class="product__title product__title--catalog" href="#">Большая корзинка для игрушек</a>
                 <span class="product__parameter product__parameter--margin">Диаметр 30 см, высота 30 см</span>
                 <span class="product__cost">1 500 руб.
-                  <svg class="product__image-cart" width="20.294" height="18.849">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
-                  </svg>
+                  <a href="#">
+                    <svg class="product__image-cart" width="20.294" height="18.849">
+                      <use xlink:href="img/sprite.svg#icon-cart"></use>
+                    </svg>
+                  </a>
                 </span>
               </div>
             </li>
@@ -171,25 +184,25 @@
 
       <!-- Modal window -->
 
-      <section class="modal-cart modal-cart--closed">
-          <div class="modal-cart__bg-font"></div>
-          <div class="modal-cart__wrapper">
-            <h2 class="modal-cart__title">Добавить в корзину</h2>
-            <span class="modal-cart__subtitle">Выберите размер:</span>
-            <ul class="modal-cart__list">
-              <li class="modal-cart__item">
-                <span class="modal-cart__size">S</span>
-              </li>
-              <li class="modal-cart__item">
-                <span class="modal-cart__size">M</span>
-              </li>
-              <li class="modal-cart__item">
-                <span class="modal-cart__size">L</span>
-              </li>
-            </ul>
-            <a class="modal-cart__button button" href="#">Добавить</a>
-          </div>
-        </section>
+      <div class="page-main__modal-backdrop"></div>
+      <section class="modal-cart">
+        <div class="modal-cart__wrapper">
+          <h2 class="modal-cart__title">Добавить в корзину</h2>
+          <span class="modal-cart__subtitle">Выберите размер:</span>
+          <ul class="modal-cart__list">
+            <li class="modal-cart__item">
+              <span class="modal-cart__size">S</span>
+            </li>
+            <li class="modal-cart__item">
+              <span class="modal-cart__size">M</span>
+            </li>
+            <li class="modal-cart__item">
+              <span class="modal-cart__size">L</span>
+            </li>
+          </ul>
+          <a class="modal-cart__button button" href="#">Добавить</a>
+        </div>
+      </section>
 
     </main>
 
@@ -200,7 +213,7 @@
         <div class="page-footer__box">
           <a class="page-footer__logo" href="#">
             <svg class="page-footer__logo-image" width="101.615" height="34.056">
-              <use xlink:href="img/sprite.svg#footer-logo"></use>
+              <use xlink:href="img/sprite.svg#logo-footer"></use>
             </svg>
           </a>
         </div>
@@ -209,21 +222,21 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="ccылка на инстаграм">
                 <svg width="21.769" height="21.334">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="ссылка на фейсбук">
                 <svg width="14.962" height="27.718">
-                  <use xlink:href="img/sprite.svg#fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy" aria-label="ссылка на твиттер">
                 <svg width="23.494" height="20.168">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -234,48 +247,12 @@
             <b class="copyright__text">Разработано</b>
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__image" width="26.943" height="34.09">
-              <use xlink:href="img/sprite.svg#academy"></use>
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-
-      var modalMain = document.querySelector('.modal-window');
-      var modalCart = document.querySelector('.product__image-cart');
-      var modalClose = document.querySelector('.modal-cart__button');
-
-      modalCart.addEventListener('click', function() {
-        if (modalMain.classList.contains('modal-cart--closed')) {
-          modalMain.classList.remove('modal-cart--closed');
-          modalMain.classList.add('modal-cart--opened');
-        } else {
-          modalMain.classList.add('modal-cart--closed');
-          modalMain.classList.remove('modal-cart--opened');
-        }
-
-        modalClose.addEventListener('click', function() {
-          modalMain.classList.remove('modal-cart--opened');
-          modalMain.classList.add('modal-cart--closed');
-        });
-      });
-
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
