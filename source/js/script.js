@@ -15,7 +15,8 @@ navToggle.addEventListener('click', function() {
 
 var modalBackdrop = document.querySelector('.page-main__modal-backdrop');
 var modalWindow = document.querySelector('.modal-cart');
-var openModalWindow = [].slice.call(document.querySelectorAll('.product__image-cart'));
+var openModalWindowForm = [].slice.call(document.querySelectorAll('.product__image-cart'));
+var openModalWindowIndex = [].slice.call(document.querySelectorAll('.featured__button'));
 var closeModalWindow = document.querySelector('.modal-cart__button');
 
 function openModal (backdrop, targetModal) {
@@ -29,14 +30,26 @@ function openModal (backdrop, targetModal) {
   }
 }
 
-openModalWindow.forEach(function(openModalWindow) {
-  openModalWindow.addEventListener('click', function(e) {
+openModalWindowForm.forEach(function(openModalWindowForm) {
+  openModalWindowForm.addEventListener('click', function(e) {
     e.preventDefault();
     openModal(true, modalWindow);
   });
 
   closeModalWindow.addEventListener('click', function() {
     modalWindow.classList.remove('is-visible');
-      modalBackdrop.classList.remove('is-visible');
+    modalBackdrop.classList.remove('is-visible');
+  });
+});
+
+openModalWindowIndex.forEach(function(openModalWindowIndex) {
+  openModalWindowIndex.addEventListener('click', function(e) {
+    e.preventDefault();
+    openModal(true, modalWindow);
+  });
+
+  closeModalWindow.addEventListener('click', function() {
+    modalWindow.classList.remove('is-visible');
+    modalBackdrop.classList.remove('is-visible');
   });
 });

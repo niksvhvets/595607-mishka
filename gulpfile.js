@@ -35,7 +35,7 @@ gulp.task("images", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
-  .pipe(gulp.dest("build/img"))
+  .pipe(gulp.dest("source/img"))
 });
 
 gulp.task("webp", function () {
@@ -79,6 +79,10 @@ gulp.task("clean", function () {
 gulp.task("server", function () {
   server.init({
     server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
