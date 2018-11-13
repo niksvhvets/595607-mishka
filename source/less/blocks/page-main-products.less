@@ -22,6 +22,7 @@
   background-position-y: -19px;
   padding-top: 70px;
   min-height: 282px;
+  box-sizing: border-box;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobilet@2x.jpg"), url("../img/hero-mobile@2x.webp");
@@ -79,6 +80,7 @@
 
   &:hover {
     transform: translateY(-5px);
+    transition: 0.6s;
     height: 108px;
   }
 }
@@ -88,6 +90,7 @@
 
   &:hover {
     transform: translateY(-5px);
+    transition: 0.6s;
     height: 108px;
   }
 }
@@ -110,6 +113,7 @@
 
 @media (min-width: @tablet-width) {
   .products__image-logo {
+    /*
     border-top: 1px solid #ececec;
     background-image: url("../img/hero-tablet@1x.jpg"), url("../img/hero-tablet@1x.webp");
     background-size: cover;
@@ -118,6 +122,17 @@
     background-position-x: -197px;
     padding: 0;
     position: relative;
+    */
+    border-top: 1px solid #ececec;
+    background-image: url("../img/hero-tablet@1x.jpg"), url("../img/hero-tablet@1x.webp");
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position-y: -3px;
+    background-position-x: -191px;
+    padding: 0;
+    position: relative;
+    min-height: 753px;
+    padding: 148px 50px 6px;
 
     &::after {
       display: block;
@@ -143,9 +158,11 @@
     text-align: center;
     font-size: 43px;
     line-height: 50px;
+    /*
     padding: 0;
     padding-top: 152px;
     padding-bottom: 500px;
+    */
     width: 500px;
   }
 

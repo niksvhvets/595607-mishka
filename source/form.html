@@ -5,6 +5,8 @@
     <title>HTML Academy: Форма</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
     <script>
         document.createElement( "picture" );
@@ -17,15 +19,11 @@
     </div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <svg class="page-header__logo-mobile" width="85.589" height="35.034">
-          <use xlink:href="#logo-mobile"></use>
-        </svg>
-        <svg class="page-header__logo-tablet" width="112.389" height="46.087">
-          <use xlink:href="#logo-tablet"></use>
-        </svg>
-        <svg class="page-header__logo-desktop" width="148.051" height="72.707">
-          <use xlink:href="#logo-desktop"></use>
-        </svg>
+        <picture>
+          <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Мишка">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -84,14 +82,14 @@
             <ul class="form__list form__list--radio">
               <li class="form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="radio" name="product" value="accessory">
+                  <input class="visually-hidden" type="radio" name="product" value="accessory" checked>
                   <span class="checkbox__indicator-radio"></span>
                   <span class="checkbox__label">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="radio" name="product" value="toy">
+                  <input class="visually-hidden" type="radio" name="product" value="toy">
                   <span class="checkbox__indicator-radio"></span>
                   <span class="checkbox__label">Детская игрушка</span>
                 </label>
@@ -104,42 +102,42 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="white" checked>
+                  <input class="visually-hidden" type="checkbox" name="white" checked>
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__label">Белый</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="gray" checked>
+                  <input class="visually-hidden" type="checkbox" name="gray" checked>
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__label">Серый</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="tiffany">
+                  <input class="visually-hidden" type="checkbox" name="tiffany">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__label">«Тиффани»</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="black">
+                  <input class="visually-hidden" type="checkbox" name="black">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__label">Черный</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="pink">
+                  <input class="visually-hidden" type="checkbox" name="pink">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__label">Розовый</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="orange">
+                  <input class="visually-hidden" type="checkbox" name="orange">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__label">Оранжевый</span>
                 </label>

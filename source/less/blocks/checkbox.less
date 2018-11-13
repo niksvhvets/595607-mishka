@@ -12,6 +12,7 @@
   border-radius: 100%;
   border: 2px solid black;
   margin-left: 2px;
+  box-sizing: border-box;
 
   &:hover {
     border: 2px solid #62d1ba;
@@ -36,12 +37,17 @@
   }
 }
 
+.checkbox input[type="radio"]:focus + .checkbox__indicator-radio {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .checkbox__indicator {
   position: relative;
   display: block;
   width: 40px;
   height: 40px;
   border: 2px solid black;
+  box-sizing: border-box;
 
   &:hover {
     border: 2px solid #62d1ba;
@@ -67,17 +73,17 @@
   }
 }
 
+.checkbox input[type="checkbox"]:focus + .checkbox__indicator {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.checkbox input[type="checkbox"]:active + .checkbox__indicator {
+  border: 2px solid #d8d8d8;
+}
+
 .checkbox__label {
   margin-left: 22px;
   width: 200px;
-}
-
-.checkbox__input[type="radio"] {
-  display: none;
-}
-
-.checkbox__input[type="checkbox"] {
-  display: none;
 }
 
 @media (min-width: @tablet-width) {
