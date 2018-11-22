@@ -46,6 +46,7 @@
     "node": "8.12"
   },
   "dependencies": {
+    "bem-validate": "^1.1.2",
     "cwebp": "^2.0.3"
   }
 }

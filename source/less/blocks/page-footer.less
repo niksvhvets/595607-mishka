@@ -1,92 +1,56 @@
 .page-footer {
-  .width-mobile;
-  margin: 0 auto;
-  background: @footer-font-color;
-  box-sizing: border-box;
+  background-color: #353f47;
 }
 
 .page-footer__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.page-footer__social {
-  padding-top: 26px;
-  padding-bottom: 18px;
+.page-footer__nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-/*
+.page-footer__nav-item {
+  border-right: 2px solid #4a575f;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.page-footer__nav-item:first-child {
+  padding-left: 0;
+}
+
+.page-footer__nav-item:last-child {
+  border-right: 0;
+}
+
+.page-footer__nav-link {
+  font-size: 12px;
+  line-height: 24px;
+  color: #4a575f;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
 .page-footer__copyright {
-  padding-top: 15px;
-  padding-bottom: 28px;
-}
-*/
-
-.page-footer__logo {
-  display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .page-footer {
-    .width-table;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .page-footer__wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
-    padding-top: 12px;
-    padding-bottom: 0;
-  }
-
-  .page-footer__logo {
-    display: block;
-
-    &:hover {
-      fill: @green-hover;
-    }
-
-    &:active,
-    &:focus {
-      fill: @green-down;
-    }
-  }
-
-  .page-footer__social {
-    margin-left: 80px;
-    padding-top: 29px;
-    padding-bottom: 27px;
-  }
-
-  .page-footer__copyright {
-    padding-top: 18px;
-    padding-bottom: 28px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-footer {
-    min-width: 1150px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .page-footer__wrapper {
-    padding-top: 15px;
-    padding-bottom: 0;
-  }
-
-  .page-footer__social {
-    margin-left: 77px;
-    padding-top: 24px;
-  }
-
-  .page-footer__logo {
-    margin-top: -10px;
-    margin-left: 2px;
-  }
+  font-size: 12px;
+  line-height: 24px;
+  color: #4a575f;
+  text-transform: uppercase;
 }

@@ -1,20 +1,28 @@
-// экраны
+.title-style {
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
 
-.width-mobile {
-  max-width: 320px;
+  &::after {
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 45px;
+    margin-top: 5px;
+  }
 }
 
-.width-table {
-  max-width: 768px;
-}
+.link-style {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 13px 19px;
+  border: 2px solid transparent;
 
-.width-desktop {
-  max-width: 1250px;
-}
-
-
-// отступы
-.padding-left-right {
-  padding-left: 30px;
-  padding-right: 30px;
+  &:hover,
+  &:active,
+  &:focus {
+    border: 2px solid #4bcaff;
+    color: #4bcaff;
+  }
 }

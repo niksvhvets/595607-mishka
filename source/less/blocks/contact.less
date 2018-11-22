@@ -1,0 +1,131 @@
+.contact {
+  background-image: url("../img/bg-holder.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contact__title {
+  .title-style;
+  color: #ffffff;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+  &::after {
+    background-color: #ffffff;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact__input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__label {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  margin-bottom: 35px;
+}
+
+.contact__label:last-child {
+  margin-bottom: 0;
+}
+
+.contact__label--message {
+  margin-bottom: 0;
+  margin-top: 15px;
+  height: 259px;
+}
+
+.contact__label-title {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact__input {
+  width: 470px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.contact__info {
+  height: 250px;
+}
+
+.contact__info-text {
+  display: block;
+  width: 569px;
+  height: 90px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 13px;
+}
+
+.contact__info-address {
+  display: block;
+  width: 225px;
+  height: 90px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.contact__input--message {
+  width: 1170px;
+  height: 220px;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.contact__button {
+  cursor: pointer;
+  width: 370px;
+  height: 60px;
+  background-color: #4bcaff;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
+}

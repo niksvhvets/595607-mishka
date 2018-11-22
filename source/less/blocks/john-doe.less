@@ -1,0 +1,59 @@
+.john-doe {
+  background-image: url("../img/man-kamera.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.john-doe__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 170px;
+}
+
+.john-doe__title {
+  .title-style;
+  color: #ffffff;
+  font-weight: 300;
+  margin-bottom: 40px;
+
+  &::after {
+    background-color: #ffffff;
+  }
+}
+
+.john-doe__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.john-doe__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 300;
+  width: 560px;
+  margin-bottom: 30px;
+}
+
+.john-doe__social {
+  cursor: pointer;
+  width: 316px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 245px;
+}
+
+.john-doe__social-link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
+}
